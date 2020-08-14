@@ -11,7 +11,7 @@
 
 <meta name="author" content="Curriculum Vitae" />
 
-<meta name="date" content="2020-02-03" />
+<meta name="date" content="2020-08-14" />
 
 <title>Charles Marshall Cleland</title>
 
@@ -214,6 +214,22 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
+</script>
 
 
 
@@ -356,7 +372,7 @@ summary {
 
 <h1 class="title toc-ignore">Charles Marshall Cleland</h1>
 <h4 class="author">Curriculum Vitae</h4>
-<h4 class="date">February 03, 2020</h4>
+<h4 class="date">August 14, 2020</h4>
 
 </div>
 
@@ -378,7 +394,7 @@ summary {
 <div id="research-positions" class="section level1">
 <h1>Research Positions</h1>
 <ul>
-<li><a href="https://med.nyu.edu/pophealth/department-population-health">New York University School of Medicine, Department of Population Health, Division of Biostatistics</a> - Member of the Faculty (February 2019 - present)</li>
+<li><a href="https://med.nyu.edu/pophealth/department-population-health">New York University School of Medicine, Department of Population Health, Division of Biostatistics</a> - Associate Professor (February 2019 - present)</li>
 <li><a href="https://socialwork.nyu.edu">New York University Silver School of Social Work</a> - Affiliated Research Scientist (February 2019 - present)</li>
 <li><a href="https://nursing.nyu.edu">New York University Rory Meyers College of Nursing</a> - Senior Research Scientist (September 2011 - January 2019)</li>
 <li><a href="https://nursing.nyu.edu">New York University Rory Meyers College of Nursing</a> - Senior Biostatistician (September 2010 - January 2019)</li>
@@ -405,7 +421,7 @@ summary {
 <h1>Mentoring of Early Career Scientists and Doctoral Students</h1>
 <table>
 <colgroup>
-<col width="7%"></col>
+<col width="9%"></col>
 <col width="17%"></col>
 <col width="25%"></col>
 <col width="23%"></col>
@@ -447,14 +463,14 @@ summary {
 <td align="center">Barbara Tempalski</td>
 <td align="center">New Investigator, NDRI</td>
 <td align="center">Grant proposal preparation, manuscript writing</td>
-<td align="center">Ongoing</td>
+<td align="center">Research Scientist, NJCRI</td>
 </tr>
 <tr class="odd">
 <td align="center">2008-</td>
 <td align="center">Maria Khan</td>
 <td align="center">Postdoctoral Fellow, NDRI</td>
 <td align="center">Grant proposal preparation, manuscript writing</td>
-<td align="center">Associate Professor, NYUMC</td>
+<td align="center">Associate Professor, NYU Grossman School of Medicine</td>
 </tr>
 <tr class="even">
 <td align="center">2010-</td>
@@ -562,18 +578,18 @@ summary {
 <td align="center">Associate Professor, NYUMC</td>
 </tr>
 <tr class="odd">
-<td align="center">2014-</td>
+<td align="center">2014-2019</td>
 <td align="center">Ann-Margaret Navarra</td>
 <td align="center">Assistant Professor, NYU Meyers</td>
 <td align="center">Manuscript writing</td>
-<td align="center">Ongoing</td>
+<td align="center">Assistant Professor, NYU Meyers</td>
 </tr>
 <tr class="even">
-<td align="center">2015-</td>
+<td align="center">2015-2020</td>
 <td align="center">Ashly Jordan</td>
 <td align="center">Doctoral Student, CUNY</td>
 <td align="center">Committee Member</td>
-<td align="center">Ongoing</td>
+<td align="center">Postdoctoral Fellow, NYU Meyers</td>
 </tr>
 <tr class="odd">
 <td align="center">2015-16</td>
@@ -583,30 +599,37 @@ summary {
 <td align="center">Researcher, HealthPartners Minneapolis, MN</td>
 </tr>
 <tr class="even">
-<td align="center">2016-</td>
-<td align="center">Dottington Fullwood</td>
-<td align="center">Predoctoral Fellow, NYU Meyers</td>
-<td align="center">Manuscript writing</td>
-<td align="center">Ongoing</td>
-</tr>
-<tr class="odd">
-<td align="center">2017-</td>
-<td align="center">Phylicia Bediako</td>
-<td align="center">Postdoctoral Fellow, NYU Meyers</td>
-<td align="center">Manuscript writing</td>
-<td align="center">Ongoing</td>
-</tr>
-<tr class="even">
-<td align="center">2017-</td>
+<td align="center">2017-2019</td>
 <td align="center">Omar El Shahawy</td>
 <td align="center">Postdoctoral Fellow, NYUMC</td>
 <td align="center">Grant proposal preparation</td>
+<td align="center">Assistant Professor, NYU Grossman School of Medicine</td>
+</tr>
+<tr class="odd">
+<td align="center">2017-2019</td>
+<td align="center">Susan Malone</td>
+<td align="center">Research Scientist, NYU Meyers</td>
+<td align="center">Grant proposal preparation</td>
+<td align="center">Research Scientist, NYU Meyers</td>
+</tr>
+<tr class="even">
+<td align="center">2019-</td>
+<td align="center">Nan Jiang</td>
+<td align="center">Assistant Professor, NYU Grossman School of Medicine</td>
+<td align="center">Grant proposal preparation, manuscript writing</td>
 <td align="center">Ongoing</td>
 </tr>
 <tr class="odd">
-<td align="center">2017-</td>
-<td align="center">Susan Malone</td>
-<td align="center">Research Scientist, NYU Meyers</td>
+<td align="center">2020-</td>
+<td align="center">Amanda Bunting</td>
+<td align="center">Postdoctoral Fellow, NYU Grossman School of Medicine</td>
+<td align="center">Grant proposal preparation</td>
+<td align="center">Ongoing</td>
+</tr>
+<tr class="even">
+<td align="center">2019-</td>
+<td align="center">Suzan Walters</td>
+<td align="center">Postdoctoral Fellow, NYU Meyers</td>
 <td align="center">Grant proposal preparation</td>
 <td align="center">Ongoing</td>
 </tr>
@@ -616,671 +639,679 @@ summary {
 <div id="publications" class="section level1">
 <h1>Publications</h1>
 <table>
+<colgroup>
+<col width="0%"></col>
+<col width="99%"></col>
+</colgroup>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="left"> </th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
+<td align="left">1</td>
+<td align="left"><a href="https://pediatrics.aappublications.org/content/145/5/e20192808">Guilamo-Ramos, V., Benzekri, A., Thimm-Kaiser, M., Dittus, P., Ruiz, Y., Cleland, C. M., &amp; McCoy, W. (2020). A triadic intervention for adolescent sexual health: a randomized clinical trial. Pediatrics, 145(5).</a></td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
 <td align="left"><a href="https://www.sciencedirect.com/science/article/pii/S1386653220300275">Jordan, A. E., Perlman, D. C., Cleland, C. M., Wyka, K., Schackman, B. R., &amp; Nash, D. (2020). Community viral load and hepatitis C virus infection: Community viral load measures to aid public health treatment efforts and program evaluation. Journal of Clinical Virology, 104285.</a></td>
 </tr>
-<tr class="even">
-<td>2</td>
+<tr class="odd">
+<td align="left">3</td>
 <td align="left"><a href="https://www.sciencedirect.com/science/article/pii/S0376871619305113">Cleland, C. M., Bennett, A. S., Elliott, L., Rosenblum, A., Britton, P. C., &amp; Wolfson-Stofko, B. (2020). Between-and within-person associations between opioid overdose risk and depression, suicidal ideation, pain severity, and pain interference. Drug and alcohol dependence, 206, 107734. doi: 10.1016/j.drugalcdep.2019.107734</a></td>
 </tr>
-<tr class="odd">
-<td>3</td>
+<tr class="even">
+<td align="left">4</td>
 <td align="left"><a href="https://academic.oup.com/ajh/advance-article/doi/10.1093/ajh/hpz179/5618773">Gepts, T., Nguyen, A.M., Cleland, C.M., Wu, W., Pham-Singer, H., &amp; Shelley, D. (2019). Accounting for Blood Pressure Seasonality Alters Evaluation of Practice-Level Blood Pressure Control Intervention. American Journal of Hypertension. doi: 10.1093/ajh/hpz179</a></td>
 </tr>
-<tr class="even">
-<td>4</td>
+<tr class="odd">
+<td align="left">5</td>
 <td align="left"><a href="https://www.sciencedirect.com/science/article/pii/S1473309919302646">Akiyama, M. J., Cleland, C. M., Lizcano, J. A., Cherutich, P., &amp; Kurth, A. E. (2019). Prevalence, estimated incidence, risk behaviours, and genotypic distribution of hepatitis C virus among people who inject drugs accessing harm-reduction services in Kenya: a retrospective cohort study. The Lancet Infectious Diseases. doi: 10.1016/S1473-3099(19)30264-6</a></td>
 </tr>
-<tr class="odd">
-<td>5</td>
+<tr class="even">
+<td align="left">6</td>
 <td align="left"><a href="https://link.springer.com/article/10.1186/s12889-019-7464-z">Jiang, N., Cleland, C. M., Wang, M. P., Kwong, A., Lai, V., &amp; Lam, T. H. (2019). Perceptions and use of e-cigarettes among young adults in Hong Kong. BMC Public Health, 19(1), 1-9.</a></td>
 </tr>
-<tr class="even">
-<td>6</td>
+<tr class="odd">
+<td align="left">7</td>
 <td align="left"><a href="https://www.researchprotocols.org/2019/3/e12543/">Navarra, A. M. D., Gwadz, M. V., Bakken, S., Whittemore, R., Cleland, C. M., &amp; Melkus, G. D. E. (2019). Adherence Connection for Counseling, Education, and Support: Research Protocol for a Proof-of-Concept Study. JMIR research protocols, 8(3), e12543.</a></td>
 </tr>
-<tr class="odd">
-<td>7</td>
+<tr class="even">
+<td align="left">8</td>
 <td align="left"><a href="https://www.tandfonline.com/doi/abs/10.1080/07448481.2018.1498852">McNeely, J., Haley, S. J., Smith, A. J., Leonard, N. R., Cleland, C. M., Ferdschneider, M., … &amp; Adam, A. (2018). Computer self-administered screening for substance use in university student health centers. Journal of American college health, 1-10.</a></td>
 </tr>
-<tr class="even">
-<td>8</td>
+<tr class="odd">
+<td align="left">9</td>
 <td align="left"><a href="http://www.annfammed.org/content/16/Suppl_1/S21.short">Shelley, D., Blechter, B., Siman, N., Jiang, N., Cleland, C., Ogedegbe, G., … &amp; Berry, C. (2018). Quality of Cardiovascular Disease Care in Small Urban Practices. The Annals of Family Medicine, 16(Suppl 1), S21-S28.</a></td>
 </tr>
-<tr class="odd">
-<td>9</td>
+<tr class="even">
+<td align="left">10</td>
 <td align="left"><a href="https://doi.org/10.1080/08897077.2018.1469106">Palamar, J. J., Salomone, A., Cleland, C. M., &amp; Sherman, S. (2018). Willingness to Provide a Hair Sample for Drug Testing among Electronic Dance Music Party Attendees. Substance abuse.</a></td>
 </tr>
-<tr class="even">
-<td>10</td>
+<tr class="odd">
+<td align="left">11</td>
 <td align="left"><a href="https://doi.org/10.1186/s13011-018-0165-2">Tempalski, B., Cleland, C. M., Williams, L. D., Cooper, H. L., &amp; Friedman, S. R. (2018). Change and variability in drug treatment coverage among people who inject drugs in 90 large metropolitan areas in the USA, 1993–2007. Substance abuse treatment, prevention, and policy, 13(1), 28.</a></td>
 </tr>
-<tr class="odd">
-<td>11</td>
+<tr class="even">
+<td align="left">12</td>
 <td align="left"><a href="https://doi.org/10.1007/s10560-018-0563-3">Gwadz, M., Freeman, R., Leonard, N.R., Kutnick, A., Silverman, E., Ritchie, A., Bolas, J., Cleland, C.M., Tabac, L., Hirsch, M. and Powlovich, J. (2018). Understanding Organizations Serving Runaway and Homeless Youth: A Multi-setting, Multi-perspective Qualitative Exploration. Child and Adolescent Social Work Journal, 1-17.</a></td>
 </tr>
-<tr class="even">
-<td>12</td>
+<tr class="odd">
+<td align="left">13</td>
 <td align="left"><a href="https://doi.org/10.3122/jabfm.2018.04.170360">Blechter, B., Jiang, N., Cleland, C., Berry, C., Ogedegbe, O., &amp; Shelley, D. (2018). Correlates of burnout in small independent primary care practices in an urban setting. J Am Board Fam Med, 31, 529-36.</a></td>
 </tr>
-<tr class="odd">
-<td>13</td>
+<tr class="even">
+<td align="left">14</td>
 <td align="left"><a href="https://doi.org/10.3389/fpubh.2018.00112">Gwadz M, Freeman RM, Kutnick AH, Silverman E, Ritchie AS, Cleland CM, Leonard NR, Srinagesh A, Powlovich J and Bolas J (2018) Do Programs for Runaway and Homeless Youth Work? A Qualitative Exploration from the Perspectives of Youth Clients in Diverse Settings. Front. Public Health 6:112.</a></td>
 </tr>
-<tr class="even">
-<td>14</td>
+<tr class="odd">
+<td align="left">15</td>
 <td align="left"><a href="https://doi.org/10.1080/19419899.2018.1425220">Palamar, J. J., Griffin-Tomas, M., Acosta, P., Ompad, D. C., &amp; Cleland, C. M. (2018). A comparison of self-reported sexual effects of alcohol, marijuana, and ecstasy in a sample of young adult nightlife attendees. Psychology &amp; Sexuality, 1-15.</a></td>
 </tr>
-<tr class="odd">
-<td>15</td>
+<tr class="even">
+<td align="left">16</td>
 <td align="left"><a href="https://pediatrics.jmir.org/2018/1/e1/">Leonard, N. R., Casarjian, B., Fletcher, R. R., Prata, C., Sherpa, D., Kelemen, A., Rajan, S., Salaam, R., Cleland, C.M., &amp; Gwadz, M. V. (2018). Theoretically-Based Emotion Regulation Strategies Using a Mobile App and Wearable Sensor Among Homeless Adolescent Mothers: Acceptability and Feasibility Study. JMIR Pediatrics and Parenting, 1(1), e1.</a></td>
 </tr>
-<tr class="even">
-<td>16</td>
+<tr class="odd">
+<td align="left">17</td>
 <td align="left"><a href="https://www.ncbi.nlm.nih.gov/pubmed/29135654">Stevens, E. R., Nucifora, K. A., Zhou, Q., Braithwaite, R. S., Cleland, C. M., Ritchie, A. S., … &amp; Gwadz, M. V. (2018). Cost-Effectiveness of Peer-Versus Venue-Based Approaches for Detecting Undiagnosed HIV Among Heterosexuals in High-Risk New York City Neighborhoods. JAIDS Journal of Acquired Immune Deficiency Syndromes, 77(2), 183-192.</a></td>
 </tr>
-<tr class="odd">
-<td>17</td>
+<tr class="even">
+<td align="left">18</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugalcdep.2018.03.001">Palamar, J. J., Le, A., &amp; Cleland, C. M. (2018). Nonmedical opioid use among electronic dance music party attendees in New York City. Drug &amp; Alcohol Dependence, 186, 226-232.</a></td>
 </tr>
-<tr class="even">
-<td>18</td>
+<tr class="odd">
+<td align="left">19</td>
 <td align="left"><a href="https://doi.org/10.1080/10826084.2017.1327980">Palamar, J. J., Acosta, P., &amp; Cleland, C. M. (2018). Attitudes and Beliefs About New Psychoactive Substance Use Among Electronic Dance Music Party Attendees. Substance use &amp; misuse, 53(3), 381-390.</a></td>
 </tr>
-<tr class="odd">
-<td>19</td>
+<tr class="even">
+<td align="left">20</td>
 <td align="left"><a href="https://doi.org/10.1016/j.addbeh.2017.11.004">Fernández-Calderón, F., Cleland, C. M., &amp; Palamar, J. J. (2018). Polysubstance use profiles among electronic dance music party attendees in New York City and their relation to use of new psychoactive substances. Addictive behaviors, 78, 85-93.</a></td>
 </tr>
-<tr class="even">
-<td>20</td>
+<tr class="odd">
+<td align="left">21</td>
 <td align="left"><a href="https://dx.doi.org/10.2196/resprot.8200">Inwani, I., Chhun, N., Agot, K., Cleland, C. M., Buttolph, J., Thirumurthy, H., &amp; Kurth, A. E. (2017). High-Yield HIV Testing, Facilitated Linkage to Care, and Prevention for Female Youth in Kenya (GIRLS Study): Implementation Science Protocol for a Priority Population. JMIR research protocols, 6(12).</a></td>
 </tr>
-<tr class="odd">
-<td>21</td>
+<tr class="even">
+<td align="left">22</td>
 <td align="left"><a href="https://doi.org/10.1017/jsc.2017.20">Kumar, P. C., Cleland, C. M., Latkin, C., Vandevanter, N., Siman, N., Nguyen, T., &amp; Shelley, D. (2017). Social Norms and Self-Efficacy to Quit Waterpipe Use: Findings from a Tobacco Study among Male Smokers in Rural Viet Nam. Journal of Smoking Cessation, 1-8.</a></td>
 </tr>
-<tr class="even">
-<td>22</td>
+<tr class="odd">
+<td align="left">23</td>
 <td align="left"><a href="https://doi.org/10.3389/fpubh.2017.00100">Kutnick, A.H., Gwadz, M.V., Cleland, C.M., Leonard, N.R., Freeman, R., Ritchie, A.S., McCright-Gill, T., Ha, K., &amp; Martinez, B.Y. (2017). It’s a Process: Reactions to HIV Diagnosis and Engagement in HIV Care among High-Risk Heterosexuals. Front Public Health, 5.</a></td>
 </tr>
-<tr class="odd">
-<td>23</td>
+<tr class="even">
+<td align="left">24</td>
 <td align="left"><a href="https://doi.org/10.3389/fpubh.2017.00170">Aronson, I. D., Guarino, H., Bennett, A. S., Marsch, L. A., Gwadz, M., Cleland, C. M., … &amp; Bania, T. C. (2017). Staff Perspectives on a Tablet-Based Intervention to Increase HIV Testing in a High Volume, Urban Emergency Department. Frontiers in Public Health, 5, 170.</a></td>
 </tr>
-<tr class="even">
-<td>24</td>
+<tr class="odd">
+<td align="left">25</td>
 <td align="left"><a href="https://doi.org/10.1080/00952990.2017.1322094">Palamar, J.J, Acosta, P., Calderon, F.F., Sherman, S., &amp; Cleland, C.M. (2017). Assessing self-reported use of new psychoactive substances: The impact of gate questions. The American Journal of Drug and Alcohol Abuse, 43, 609-617.</a></td>
 </tr>
-<tr class="odd">
-<td>25</td>
+<tr class="even">
+<td align="left">26</td>
 <td align="left"><a href="https://doi.org/10.1371/journal.pone.0175447">Alsallaq RA, Buttolph J, Cleland CM, Hallett T, Inwani I, Agot K, et al. (2017) The potential impact and cost of focusing HIV prevention on young women and men: A modeling analysis in western Kenya. PLoS ONE 12(4): e0175447.</a></td>
 </tr>
-<tr class="even">
-<td>26</td>
+<tr class="odd">
+<td align="left">27</td>
 <td align="left"><a href="https://doi.org/10.1097/QAI.0000000000001270">Deren, S., Cleland, C. M., Lee, H., Mehandru, S., &amp; Markowitz, M. (2017). The Relationship Between Injection Drug Use Risk Behaviors and Markers of Immune Activation. JAIDS Journal of Acquired Immune Deficiency Syndromes, 75(1), e8-e12.</a></td>
 </tr>
-<tr class="odd">
-<td>27</td>
+<tr class="even">
+<td align="left">28</td>
 <td align="left"><a href="https://doi.org/10.1097/QAI.0000000000001257">Gwadz, M., Cleland, C. M., Perlman, D. C., Hagan, H., Jenness, S. M., Leonard, N. R., … &amp; Kutnick, A. (2017). Public Health Benefit of Peer-Referral Strategies for Detecting Undiagnosed HIV Infection Among High-Risk Heterosexuals in New York City. JAIDS Journal of Acquired Immune Deficiency Syndromes, 74(5), 499-507.</a></td>
 </tr>
-<tr class="even">
-<td>28</td>
+<tr class="odd">
+<td align="left">29</td>
 <td align="left"><a href="https://doi.org/10.1016/j.childyouth.2017.01.016">Gwadz, M. V., Cleland, C. M., Leonard, N. R., Bolas, J., Ritchie, A. S., Tabac, L., … &amp; Hirsh, M. (2017). Understanding organizations for runaway and homeless youth: A multi-setting quantitative study of their characteristics and effects. Children and Youth Services Review, 73, 398-410.</a></td>
 </tr>
-<tr class="odd">
-<td>29</td>
+<tr class="even">
+<td align="left">30</td>
 <td align="left"><a href="https://doi.org/10.2196/resprot.5833">Buttolph, J., Inwani, I., Agot, K., Cleland, C. M., Cherutich, P., Kiarie, J. N., … &amp; Kinuthia, J. (2017). Gender-Specific Combination HIV Prevention for Youth in High-Burden Settings: The MP3 Youth Observational Pilot Study Protocol. JMIR research protocols, 6(3), e22.</a></td>
 </tr>
-<tr class="even">
-<td>30</td>
+<tr class="odd">
+<td align="left">31</td>
 <td align="left"><a href="https://doi.org/10.1080/10826084.2016.1219373">Palamar, J. J., Acosta, P., Ompad, D. C., &amp; Cleland, C. M. (2017). Self-reported ecstasy/MDMA/“Molly” use in a sample of nightclub and dance festival attendees in New York City. Substance Use &amp; Misuse, 52(1), 82-91.</a></td>
 </tr>
-<tr class="odd">
-<td>31</td>
+<tr class="even">
+<td align="left">32</td>
 <td align="left"><a href="https://doi.org/10.1016/j.addbeh.2016.08.010">Shelley, D., Kumar, P., Lee, L., Nguyen, L., Nguyen, T. T., VanDevanter, N., Cleland, C.M., &amp; Nguyen, N. T. (2017). Health care providers’ adherence to tobacco treatment for waterpipe, cigarette and dual users in Vietnam. Addict Behav, 64, 49-53.</a></td>
 </tr>
-<tr class="even">
-<td>32</td>
+<tr class="odd">
+<td align="left">33</td>
 <td align="left"><a href="https://dx.doi.org/10.18865/ed.26.4.529">Nowlin, S. Y., Cleland, C. M., Vadiveloo, M., D’Eramo, M. G., Parekh, N., &amp; Hagan, H. (2016). Explaining Racial/Ethnic Dietary Patterns in Relation to Type 2 Diabetes: An Analysis of NHANES 2007-2012. Ethnicity &amp; Disease, 26(4), 529-536.</a></td>
 </tr>
-<tr class="odd">
-<td>33</td>
+<tr class="even">
+<td align="left">34</td>
 <td align="left"><a href="https://dx.doi.org/10.7309/jmtm.5.1.3">Aronson, I. D., Cleland, C. M., Perlman, D. C., Rajan, S., Sun, W., Ferraris, C., . . . Bania, T. C. (2016). Mobile screening to identify and follow-up with high Risk, HIV negative youth. J Mob Technol Med, 5(1), 9.</a></td>
 </tr>
-<tr class="even">
-<td>34</td>
+<tr class="odd">
+<td align="left">35</td>
 <td align="left"><a href="https://doi.org/10.1080/10810730.2016.1204382">Aronson, I. D., Cleland, C. M., Perlman, D. C., Rajan, S., Sun, W., &amp; Bania, T. C. (2016). Feasibility of a Computer-Based Intervention Addressing Barriers to HIV Testing Among Young Patients Who Decline Tests at Triage. Journal of Health Communication, 21(9), 1039-1045.</a></td>
 </tr>
-<tr class="odd">
-<td>35</td>
+<tr class="even">
+<td align="left">36</td>
 <td align="left"><a href="https://doi.org/10.1089/apc.2016.0135">Batista, P., Deren, S., Banfield, A., Silva, E., Cruz, M., Garnes, P., Cleland, C.M., Mehandru, S., LaMar, M., &amp; Markowitz, M. (2016). Challenges in recruiting people who use drugs for hiv-related biomedical research: perspectives from the field. AIDS Patient Care STDS, 30(8), 379-384.</a></td>
 </tr>
-<tr class="even">
-<td>36</td>
+<tr class="odd">
+<td align="left">37</td>
 <td align="left"><a href="https://doi.org/10.3109/14659891.2014.943817">Berger, A. T., Khan, M. R., &amp; Cleland, C. M. (2016). Racial differences in the longitudinal associations between adolescent inhalant use and young adulthood STI risk. Journal of Substance Use, 21(1), 14-21.</a></td>
 </tr>
-<tr class="odd">
-<td>37</td>
+<tr class="even">
+<td align="left">38</td>
 <td align="left"><a href="https://dx.doi.org/10.4172/2155-6113.1000544">Gwadz, M., Cleland, C. M., Jenness, S. M., Silverman, E., Hagan, H., Ritchie, A. S., . . . Swain, Q. (2016). Exploring Factors Associated with Recent HIV Testing among Heterosexuals at High Risk for HIV Infection Recruited with Venue-based Sampling. J AIDS Clin Res, 7(2).</a></td>
 </tr>
-<tr class="even">
-<td>38</td>
+<tr class="odd">
+<td align="left">39</td>
 <td align="left"><a href="https://doi.org/10.3389/fpubh.2016.00076">Gwadz, M., Cleland, C. M., Kutnick, A., Leonard, N. R., Ritchie, A. S., Lynch, L., . . . Martinez, B. (2016). Factors associated with recent HIV Testing among heterosexuals at high risk for HIV infection in new York city. Front Public Health, 4.</a></td>
 </tr>
-<tr class="odd">
-<td>39</td>
+<tr class="even">
+<td align="left">40</td>
 <td align="left"><a href="https://doi.org/10.3389/fpubh.2016.00062">Gwadz, M., de Guzman, R., Freeman, R., Kutnick, A., Silverman, E., Leonard, N. R., Ritchie, A.S., Munoz-Plaza, C., Salomon, N., Wolfe, H., Hilliard, C., Cleland, C.M., &amp; Honig, S. (2016). Exploring how substance Use impedes engagement along the HIV care continuum: a Qualitative study. Front Public Health, 4.</a></td>
 </tr>
-<tr class="even">
-<td>40</td>
+<tr class="odd">
+<td align="left">41</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-016-1538-z">Tseng, T. Y., Krebs, P., Schoenthaler, A., Wong, S., Sherman, S., Gonzalez, M., Urbina, A., Cleland, C.M., &amp; Shelley, D. (2016). Combining Text Messaging and Telephone Counseling to Increase Varenicline Adherence and Smoking Abstinence Among Cigarette Smokers Living with HIV: A Randomized Controlled Study. AIDS and Behavior, 1-11.</a></td>
 </tr>
-<tr class="odd">
-<td>41</td>
+<tr class="even">
+<td align="left">42</td>
 <td align="left"><a href="https://doi.org/10.1097/QAD.0000000000001091">Hagan, H., Jordan, A. E., &amp; Cleland, C. M. (2016). Response to the calculation of population attributable fractions of risk factors for hepatitis C transmission: authors’ reply. AIDS, 30(10), 1685.</a></td>
 </tr>
-<tr class="even">
-<td>42</td>
+<tr class="odd">
+<td align="left">43</td>
 <td align="left"><a href="https://doi.org/10.1177/1099800415619227">Hammer, M. J., Melkus, G. D. E., Knobf, M. T., Casper, C., Fletcher, J., &amp; Cleland, C. M. (2016). Glycemic Status and Infection Risk in Nondiabetic Autologous Hematopoietic Cell Transplantation Recipients. Biol Res Nurs, 18(3), 344-350.</a></td>
 </tr>
-<tr class="odd">
-<td>43</td>
+<tr class="even">
+<td align="left">44</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugalcdep.2016.05.030">Kumar, P. C., Cleland, C. M., Gourevitch, M. N., Rotrosen, J., Strauss, S., Russell, L., &amp; McNeely, J. (2016). Accuracy of the Audio Computer Assisted Self Interview version of the Alcohol, Smoking and Substance Involvement Screening Test (ACASI ASSIST) for identifying unhealthy substance use and substance use disorders in primary care patients. Drug Alcohol Depend, 165, 38-44.</a></td>
 </tr>
-<tr class="even">
-<td>44</td>
+<tr class="odd">
+<td align="left">45</td>
 <td align="left"><a href="https://dx.doi.org/10.2196/jmir.5830">Kurth, A. E., Chhun, N., Cleland, C. M., Crespo-Fierro, M., Parés-Avila, J. A., Lizcano, J. A., . . . Sharp, V. L. (2016). Linguistic and Cultural Adaptation of a Computer-Based Counseling Program (CARE+ Spanish) to Support HIV Treatment Adherence and Risk Reduction for People Living With HIV/AIDS: A Randomized Controlled Trial. J Med Internet Res, 18(7).</a></td>
 </tr>
-<tr class="odd">
-<td>45</td>
+<tr class="even">
+<td align="left">46</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-015-1213-9">Kurth, A. E., Cleland, C. M., Chhun, N., Sidle, J. E., Were, E., Naanyu, V., . . . Siika, A. M. (2016). Accuracy and acceptability of oral fluid HIV self-testing in a general adult population in Kenya. AIDS Behav, 20(4), 870-879.</a></td>
 </tr>
-<tr class="even">
-<td>46</td>
+<tr class="odd">
+<td align="left">47</td>
 <td align="left"><a href="https://doi.org/10.1093/infdis/jiw373">Markowitz, M., Deren, S., Cleland, C., La Mar, M., Silva, E., Batista, P., . . . Evering, T. H. (2016). Chronic Hepatitis C Virus Infection and the Proinflammatory Effects of Injection Drug Use. Journal of Infectious Diseases, 214(9), 1376-1382.</a></td>
 </tr>
-<tr class="odd">
-<td>47</td>
+<tr class="even">
+<td align="left">48</td>
 <td align="left"><a href="http://dx.doi.org/10.1037/hea0000268">Nadimpalli, S. B., Cleland, C. M., Hutchinson, M. K., Islam, N., Barnes, L. L., &amp; Van Devanter, N. (2016). The association between discrimination and the health of Sikh Asian Indians. Health Psychology, 35(4), 351.</a></td>
 </tr>
-<tr class="even">
-<td>48</td>
+<tr class="odd">
+<td align="left">49</td>
 <td align="left"><a href="https://dx.doi.org/10.2147/PROM.S93308">Nocella, J. M., Dickson, V. V., Cleland, C. M., &amp; Melkus, G. D. E. (2016). Structure, process, and outcomes of care in a telemonitoring program for patients with type 2 diabetes. Patient Relat Outcome Meas, 7, 19.</a></td>
 </tr>
-<tr class="odd">
-<td>49</td>
+<tr class="even">
+<td align="left">50</td>
 <td align="left"><a href="https://doi.org/10.1080/00952990.2016.1181179">Palamar, J. J., Acosta, P., Sherman, S., Ompad, D. C., &amp; Cleland, C. M. (2016). Self-reported use of novel psychoactive substances among attendees of electronic dance music venues. Am J Drug Alcohol Abuse, 42(6), 624-632.</a></td>
 </tr>
-<tr class="even">
-<td>50</td>
+<tr class="odd">
+<td align="left">51</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugalcdep.2016.06.001">Palamar, J. J., Keyes, K., &amp; Cleland, C. M. (2016). Underreporting of ecstasy use among high school seniors in the US. Drug Alcohol Depend, 165, 279-282.</a></td>
 </tr>
-<tr class="odd">
-<td>51</td>
+<tr class="even">
+<td align="left">52</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugalcdep.2016.02.001">Palamar, J. J., Salomone, A., Vincenti, M., &amp; Cleland, C. M. (2016). Detection of “bath salts” and other novel psychoactive substances in hair samples of ecstasy/MDMA/“Molly” users. Drug Alcohol Depend, 161, 200-205.</a></td>
 </tr>
-<tr class="even">
-<td>52</td>
+<tr class="odd">
+<td align="left">53</td>
 <td align="left"><a href="https://doi.org/10.1080/00952990.2016.1178269">Palamar, J. J., Shearston, J. A., &amp; Cleland, C. M. (2016). Discordant reporting of nonmedical opioid use in a nationally representative sample of US high school seniors. Am J Drug Alcohol Abuse, 42(5), 530-538.</a></td>
 </tr>
-<tr class="odd">
-<td>53</td>
+<tr class="even">
+<td align="left">54</td>
 <td align="left"><a href="http://dx.doi.org/10.1037/a0038264">Simon, V. A., Feiring, C., &amp; Cleland, C. M. (2016). Early stigmatization, PTSD, and perceived negative reactions of others predict subsequent strategies for processing child sexual abuse. Psychology of violence, 6(1), 112.</a></td>
 </tr>
-<tr class="even">
-<td>54</td>
+<tr class="odd">
+<td align="left">55</td>
 <td align="left"><a href="https://doi.org/10.1186/s12889-015-2451-5">Gwadz, M., Cleland, C. M., Leonard, N. R., Kutnick, A., Ritchie, A. S., Banfield, A., … &amp; Martinez, B. Y. (2015). Hybrid STTR intervention for heterosexuals using anonymous HIV testing and confidential linkage to care: a single arm exploratory trial using respondent-driven sampling. BMC public health, 15(1), 1133.</a></td>
 </tr>
-<tr class="odd">
-<td>55</td>
+<tr class="even">
+<td align="left">56</td>
 <td align="left"><a href="https://doi.org/10.2105/AJPH.2015.302911">Cooper HL, West B, Linton S, Hunter-Jones J, Zlotorzynska M, Stall R, Wolfe ME, Williams L, Hall HI, Cleland C, Tempalski B, &amp; Friedman S (2016). Contextual Predictors of Injection Drug Use Among Black Adolescents and Adults in US Metropolitan Areas, 1993–2007. American Journal of Public Health, 106(3).</a></td>
 </tr>
-<tr class="even">
-<td>56</td>
+<tr class="odd">
+<td align="left">57</td>
 <td align="left"><a href="https://doi.org/10.1186/s13012-015-0328-8">Shelley, D., VanDevanter, N., Cleland, C. M., Nguyen, L., &amp; Nguyen, N. (2015). Implementing tobacco use treatment guidelines in community health centers in Vietnam. Implementation Science, 10(1), 1.</a></td>
 </tr>
-<tr class="odd">
-<td>57</td>
+<tr class="even">
+<td align="left">58</td>
 <td align="left"><a href="https://dx.doi.org/10.1097/QAD.0000000000000834">Hagan, H., Jordan, A. E., Neurer, J., &amp; Cleland, C. M. (2015). Incidence of sexually transmitted hepatitis C virus infection in HIV-positive men who have sex with men. AIDS, 29(17), 2335-2345.</a></td>
 </tr>
-<tr class="even">
-<td>58</td>
+<tr class="odd">
+<td align="left">59</td>
 <td align="left"><a href="https://dx.doi.org/10.1097/QAI.0000000000000769">Kurth, A. E., Cleland, C. M., Des Jarlais, D. C., Musyoki, H., Lizcano, J. A., Chhun, N., &amp; Cherutich, P. (2015). HIV prevalence, estimated incidence, and risk behaviors among people who inject drugs in Kenya. JAIDS Journal of Acquired Immune Deficiency Syndromes, 70(4), 420-427.</a></td>
 </tr>
-<tr class="odd">
-<td>59</td>
+<tr class="even">
+<td align="left">60</td>
 <td align="left"><a href="https://doi.org/10.1080/10550887.2015.1059226">Fong, C., Matusow, H., Cleland, C. M., &amp; Rosenblum, A. (2015). Characteristics of Non-Opioid Substance Misusers Among Patients Enrolling in Opioid Treatment Programs: A Latent Class Analysis. Journal of addictive diseases, 34(2-3), 141-150.</a></td>
 </tr>
-<tr class="even">
-<td>60</td>
+<tr class="odd">
+<td align="left">61</td>
 <td align="left"><a href="https://www.ncbi.nlm.nih.gov/pubmed/25937164">Liu, S., Fu, M.R., Hu, S.,Wang, V.Y., Crupi, R., Qiu, J.M., Cleland, C.M., D’Eramo Melkus, G. (2015). Accuracy of Body Weight Perception and Obesity among Chinese Americans. Obesity Research &amp; Clinical Practice.</a></td>
 </tr>
-<tr class="odd">
-<td>61</td>
+<tr class="even">
+<td align="left">62</td>
 <td align="left"><a href="https://doi.org/10.1016/j.amjmed.2015.02.007">McNeely, J., Strauss, S. M., Saitz, R., Cleland, C. M., Palamar, J. J., Rotrosen, J., &amp; Gourevitch, M. N. (2015). A brief patient self-administered substance use screening tool for primary care: two-site validation study of the Substance Use Brief Screen (SUBS). The American journal of medicine, 128(7), 784-e9.</a></td>
 </tr>
-<tr class="even">
-<td>62</td>
+<tr class="odd">
+<td align="left">63</td>
 <td align="left"><a href="https://doi.org/10.1093/ntr/ntv068">Shelley, D., Tseng, T. Y., Gonzalez, M., Krebs, P., Wong, S., Furberg, R., … &amp; Cleland, C. M. (2015). Correlates of adherence to varenicline among HIV+ smokers. Nicotine &amp; Tobacco Research, 17(8), 968-974.</a></td>
 </tr>
-<tr class="odd">
-<td>63</td>
+<tr class="even">
+<td align="left">64</td>
 <td align="left"><a href="https://dx.doi.org/10.2147/BCTT.S87854">Fu, M.R., Axelrod, D., Cleland, C.M., Qiu, Z., Guth, A.A., Kleinman, R., Scagliola, J., &amp; Haber, J. (2015). Symptom report in detecting breast cancer-related lymphedema. Breast Cancer: Targets and Therapy, 2015(7), 345-352.</a></td>
 </tr>
-<tr class="even">
-<td>64</td>
+<tr class="odd">
+<td align="left">65</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-015-1054-6">Gwadz, M.V., Cleland, C.M., et al. (2015). Behavioral intervention improves treatment outcomes among HIV-infected individuals who have delayed, declined, or discontinued antiretroviral therapy: A randomized controlled trial of a novel intervention. AIDS and Behavior, 19, 1801-1817.</a></td>
 </tr>
-<tr class="odd">
-<td>65</td>
+<tr class="even">
+<td align="left">66</td>
 <td align="left"><a href="https://doi.org/10.3389/fpsyg.2015.01028">Leonard, N.R., Gwadz, M., Ritchie, A.S., Linick, J.L., Cleland, C.M., Elliot, L. &amp; Grethel, M. (2015). A multi-method exploratory study of stress, coping and substance use among high school youth in private schools. Frontiers in Psychology, 6:1028.</a></td>
 </tr>
-<tr class="even">
-<td>66</td>
+<tr class="odd">
+<td align="left">67</td>
 <td align="left"><a href="https://doi.org/10.3390/jpm5030229">Fu, M.R.; Axelrod, D.; Guth, A.A.; Cleland, C.M.; Ryan, C.E.; Weaver, K.R.; Qiu, J.M.; Kleinman, R.; Scagliola, J.; Palamar, J.J.; Melkus, G.D. (2015). Comorbidities and Quality of Life among Breast Cancer Survivors: A Prospective Study. J. Pers. Med, 5, 229-242.</a></td>
 </tr>
-<tr class="odd">
-<td>67</td>
+<tr class="even">
+<td align="left">68</td>
 <td align="left"><a href="https://doi.org/10.1186/s12889-015-1816-0">Gwadz, M., Cleland, C. M., Hagan, H., Jenness, S., Kutnick, A., Leonard, N. R., … &amp; Kurth, A. E. (2015). Strategies to uncover undiagnosed HIV infection among heterosexuals at high risk and link them to HIV care with high retention: a “seek, test, treat, and retain” study. BMC Public Health, 15(1), 481.</a></td>
 </tr>
-<tr class="even">
-<td>68</td>
+<tr class="odd">
+<td align="left">69</td>
 <td align="left"><a href="https://doi.org/10.7748/nr.22.5.13.e1319">Walani, S.R. &amp; Cleland, C.M. (2015). The multiple imputation method for handling missing data: a case study involving secondary data analysis. Nurse Researcher, 22(5), 13-19.</a></td>
 </tr>
-<tr class="odd">
-<td>69</td>
+<tr class="even">
+<td align="left">70</td>
 <td align="left"><a href="http://dx.doi.org/10.1136/bmjopen-2014-007198">Rhodes, T., Guise, A., Vickerman, P., Ndimbii, J., Ngugi, E., Cleland, C.M., Platt, L., Kurth, A.E., &amp; Strathdee, S.A. (2015). Is the promise of methadone Kenya’s solution to managing HIV and addiction? A mixed-methods mathematical modelling and qualitative study. BMJ Open, 5(3), e007198.</a></td>
 </tr>
-<tr class="even">
-<td>70</td>
+<tr class="odd">
+<td align="left">71</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugalcdep.2015.01.029">Palamar, J.J., Davies, S., Ompad, D.C., Cleland, C.M., &amp; Weitzman, M. (2015). Powder cocaine and crack use in the United States: An examination of risk for arrest and socioeconomic disparities in use. Drug and Alcohol Dependence, 149, 108-116.</a></td>
 </tr>
-<tr class="odd">
-<td>71</td>
+<tr class="even">
+<td align="left">72</td>
 <td align="left"><a href="https://doi.org/10.3109/00952990.2014.943371">Palamar, J. J., Fenstermaker, M., Kamboukos, D., Ompad, D. C., Cleland, C. M., &amp; Weitzman, M. (2014). Adverse psychosocial outcomes associated with drug use among US high school seniors: a comparison of alcohol and marijuana. The American journal of drug and alcohol abuse, 40(6), 438-446.</a></td>
 </tr>
-<tr class="even">
-<td>72</td>
+<tr class="odd">
+<td align="left">73</td>
 <td align="left"><a href="https://doi.org/10.1089/aid.2013.0251">Sivapalasingam, S., McClelland, R.S., Ravel, J., Amhed, A., Cleland, C.M., Gajer, P., Mwamzaka, M., Marshed, F., Shafi, J., Masese, L., Fajans, M., Anderson, M.E., Jaoko, W., &amp; Kurth, A. (2014). An effective intervention to reduce intravaginal practices among HIV-1 uninfected Kenyan women. AIDS Research and Human Retroviruses, 30(11), 1046-1057.</a></td>
 </tr>
-<tr class="odd">
-<td>73</td>
+<tr class="even">
+<td align="left">74</td>
 <td align="left"><a href="https://doi.org/10.3389/fpubh.2014.00081">Gwadz, M.V., Applegate,E., Cleland, C.M., Leonard, N.R., Wolfe, H. (2014). HIV-infected individuals who delay, decline, or discontinue antiretroviral therapy: Comparing clinic- and peer-recruited cohorts. HIV and AIDS, 2, 81.</a></td>
 </tr>
-<tr class="even">
-<td>74</td>
+<tr class="odd">
+<td align="left">75</td>
 <td align="left"><a href="https://doi.org/10.1521/aeap.2014.26.2.144">Mateu-Gelabert, P., Sandoval, M., Gwadz, M.V., Cleland, C.M., Jordan, A., Lune, H., &amp; Friedman, S.R. (2014). Staying Safe Intervention: Training Injection Drug Users in Strategies to avoid HCV and HIV injection-related infections. AIDS Education and Prevention, 26(2), 144-157.</a></td>
 </tr>
-<tr class="odd">
-<td>75</td>
+<tr class="even">
+<td align="left">76</td>
 <td align="left"><a href="https://doi.org/10.1016/j.pec.2014.04.018">Dickson, V., D’Eramo Melkus, G., Katz, S.D., Levine-Wong, A., Dillworth, J., Cleland, C.M., &amp; Riegel, B. (2014). Building Skill in Heart Failure Self-Care among Community Dwelling Older Adults: Results of a Pilot Study. Patient Education and Counseling, 96(2), 188-196.</a></td>
 </tr>
-<tr class="even">
-<td>76</td>
+<tr class="odd">
+<td align="left">77</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-014-0829-5">Gwadz, M.V., Cleland, C.M., Belkin, M., Ritchie, A., Leonard, N.R., Riedel, M., Banfield, A., Colon, P., Elharrar, V., Kagan, J., &amp; Mildvan, D. (2014). ACT2 peer-driven intervention increases enrollment into HIV/AIDS medical studies among African-Americans/Blacks and Latino/Hispanics: A cluster randomized controlled trial. AIDS and Behavior, 18, 2409-2422.</a></td>
 </tr>
-<tr class="odd">
-<td>77</td>
+<tr class="even">
+<td align="left">78</td>
 <td align="left"><a href="https://doi.org/10.3109/00952990.2014.892950">Khan, M.R., Cleland, C.M., Scheidell, J.D., &amp; Berger, A.T. (2014). Gender and racial/ethnic differences in patterns of adolescent alcohol use and associations with adolescent and adult illicit drug use in the United States. The American Journal of Drug and Alcohol Abuse, 40, 213-224.</a></td>
 </tr>
-<tr class="even">
-<td>78</td>
+<tr class="odd">
+<td align="left">79</td>
 <td align="left"><a href="https://doi.org/10.1016/j.annepidem.2014.01.008">Friedman, S.R., Cooper, H.L.F., Tempalski, B., West, B., Hall, I., Des Jarlais, D.C., Morton, C.M., &amp; Cleland, C.M. (2014). Do metropolitan HIV epidemic histories and programs for people who inject drugs and men who have sex with men predict AIDS incidence and mortality among heterosexuals? Annals of Epidemiology, 24, 304-311.</a></td>
 </tr>
-<tr class="odd">
-<td>79</td>
+<tr class="even">
+<td align="left">80</td>
 <td align="left"><a href="https://dx.doi.org/10.1097/QAI.0000000000000100">Kurth, A.E., Speilberg, F., Cleland, C.M., Lambdin, B., Bangsberg, D.R., Frick, P.A., Severynen, A.O., Clausen, M., Norman, B., Lockhardt, D., Simoni, J.M., &amp; Holmes, K.K. (2014). Computerized counseling reduces HIV-1 viral load and condom use errors: Findings from a randomized controlled trial. Journal of Acquired Immune Deficiency Syndromes, 65, 611-620.</a></td>
 </tr>
-<tr class="even">
-<td>80</td>
+<tr class="odd">
+<td align="left">81</td>
 <td align="left"><a href="https://nyuscholars.nyu.edu/en/publications/the-role-of-symptom-report-in-detecting-and-diagnosing-breast-can-2">Fu, M., Cleland, C. M., Guth, A. A., Qiu, Z., Haber, J., Cartwright-Alcarese, F., … Axelrod, D. (2014). The role of symptom report in detecting and diagnosing breast cancer-related lymphedema. European Journal of Clinical &amp; Medical Oncology.</a></td>
 </tr>
-<tr class="odd">
-<td>81</td>
+<tr class="even">
+<td align="left">82</td>
 <td align="left"><a href="https://doi.org/10.1016/j.jsat.2013.08.012">Marsch, L.A., Guarino, H., Acosta, M., Aponte-Melendez, Y., Cleland, C.M., Grabinski, M., Brady, R., &amp; Edwards, J. (2014). Web-based behavioral treatment for substance use disorders as a partial replacement for standard community-based treatment. Journal of Substance Abuse Treatment, 46, 43-51.</a></td>
 </tr>
-<tr class="even">
-<td>82</td>
+<tr class="odd">
+<td align="left">83</td>
 <td align="left"><a href="https://doi.org/10.3389/fpsyg.2013.00792">Leonard, N.R., Jha, A., Casarjian, B., Goolsarran, M., Garcia, C., Cleland, C.M., Gwadz, M.V., &amp; Massey, Z. (2013). Mindfulness training improves attentional task performance in incarcerated youth: A group randomized controlled intervention trial. Frontiers in Psychology, 4 (792), 1.</a></td>
 </tr>
-<tr class="odd">
-<td>83</td>
+<tr class="even">
+<td align="left">84</td>
 <td align="left"><a href="https://doi.org/10.1016/j.ijnurstu.2012.12.008">Ryu, E., Kim, K., Choi, S.Y., Cleland, C.M., &amp; Fu, M.R. (2013). The Korean Version of the Symptom Experience Index: A Psychometric Study. International Journal of Nursing Studies, 50, 1098-1107.</a></td>
 </tr>
-<tr class="even">
-<td>84</td>
+<tr class="odd">
+<td align="left">85</td>
 <td align="left"><a href="https://doi.org/10.1093/her/cyt052">Leonard, N.R., Banfield, A., Riedel, M., Mildvan, D., Arredondo, G., Cleland, C.M., &amp; Gwadz, M.V. (2013). Description of an efficacious behavioral peer-driven intervention to reduce racial/ethnic disparities in AIDS clinical trials. Health Education Research, 28, 574-590.</a></td>
 </tr>
-<tr class="odd">
-<td>85</td>
+<tr class="even">
+<td align="left">86</td>
 <td align="left"><a href="https://doi.org/10.1371/journal.pone.0064789">Tempalski B., Pouget, E.R., Cleland, C.M., Brady, J.E., Cooper, H.L.F., Hall, H.I., Lansky, A., West, B.S., &amp; Friedman, S.R. (2013). Trends in the Population Prevalence of People Who Inject Drugs in US Metropolitan Areas 1992-2007. PLoS ONE 8(6): e64789.</a></td>
 </tr>
-<tr class="even">
-<td>86</td>
+<tr class="odd">
+<td align="left">87</td>
 <td align="left"><a href="https://doi.org/10.4172/2155-6113.1000223">Engel, S., Gwadz, M.V., &amp; Cleland, C.M. (2013). The experience of screening for HIV/AIDS medical studies among African-American and Latino/Hispanic persons living with HIV/AIDS: A mixed methods exploration. Journal of AIDS and Clinical Research, 4:223.</a></td>
 </tr>
-<tr class="odd">
-<td>87</td>
+<tr class="even">
+<td align="left">88</td>
 <td align="left"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4040962/">Fu, M.R. Cleland, C.M., Guth, A.A., Kayal, M., Haber, J., Cartwright, F., Kleinman, R., Yang, K., Scagliola, J., &amp; Axelrod, D. (2013). L-DEX Ratio in Detecting and Diagnosing Breast Cancer-Related Lymphedema: Reliability, Sensitivity, and Specificity. Lymphology, 46(2), 85-96.</a></td>
 </tr>
-<tr class="even">
-<td>88</td>
+<tr class="odd">
+<td align="left">89</td>
 <td align="left"><a href="https://doi.org/10.1080/15374416.2012.736083">Feiring, C., Simon, V.A., Cleland, C.M., &amp; Barrett, E.P. (2013). Potential Pathways from Stigmatization and Externalizing Behavior to Anger and Dating Aggression in Sexually Abused Youth. Journal of Clinical Child and Adolescent Psychology, 42(3), 309-322.</a></td>
 </tr>
-<tr class="odd">
-<td>89</td>
+<tr class="even">
+<td align="left">90</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-012-0194-1">Gwadz, M.V., Cleland, C.M., Leonard, N.R., Ritchie, A.S., Banfield, A., Riedel, M., &amp; Mildvan, D. (2013). Predictors of Screening for AIDS Clinical Trials Among African-Americans and Latino/Hispanics Enrolled in an Efficacious Peer-Driven Intervention: Uncovering Socio-Demographic, Health, and Substance Use-Related Factors That Promote or Impede Screening. AIDS and Behavior, 17, 801-812.</a></td>
 </tr>
-<tr class="even">
-<td>90</td>
+<tr class="odd">
+<td align="left">91</td>
 <td align="left"><a href="https://doi.org/10.1111/j.1745-7599.2012.00791.x">Hickey, M.T. &amp; Cleland, C.M. (2013). Sexually transmitted disease risk perception among female college students. Journal of the American Academy of Nurse Practitioners, 25, 377-384.</a></td>
 </tr>
-<tr class="odd">
-<td>91</td>
+<tr class="even">
+<td align="left">92</td>
 <td align="left"><a href="https://doi.org/10.15288/jsad.2013.74.378">Magura, S., Cleland, C.M., &amp; Tonigan, J.S. (2013). Evaluating Alcoholics Anonymous’ effect on drinking in Project MATCH using cross-lagged regression panel analysis. Journal of Studies on Alcohol and Drugs, 74, 378-385.</a></td>
 </tr>
-<tr class="even">
-<td>92</td>
+<tr class="odd">
+<td align="left">93</td>
 <td align="left"><a href="https://dx.doi.org/10.5055/jom.2012.0137">Rosenblum, A., Cruciani, R.A., Strain, E.C., Cleland, C.M., Joseph, H., Magura, S., Marsch, L.A., McNicholas, L.F., Savage, S.R., Sundaram, A., &amp; Portenoy, R.K. (2012). Sublingual buprenorphine/naloxone for chronic pain in at-risk patients: Development and pilot test of a clinical protocol. Journal of Opioid Management, 8, 369-382.</a></td>
 </tr>
-<tr class="odd">
-<td>93</td>
+<tr class="even">
+<td align="left">94</td>
 <td align="left"><a href="https://doi.org/10.3109/10826084.2012.723490">Cleland, C.M. (2012). Chuck Cleland on Steve Magura’s A Meta-evaluation of the National Youth Anti-Drug Media Campaign Evaluation. Substance Use &amp; Misuse, 47, 13-14.</a></td>
 </tr>
-<tr class="even">
-<td>94</td>
+<tr class="odd">
+<td align="left">95</td>
 <td align="left"><a href="http://www.jons-online.com/issues/2012/august-2012-vol-3-no-4/1174-jons-497">Fu, M.R., Ryan, J.C., &amp; Cleland, C.M. (2012). Lymphedema knowledge and practice patterns among oncology nurse navigators. Journal of Oncology Navigation &amp; Survivorship, 3, 8-15.</a></td>
 </tr>
-<tr class="odd">
-<td>95</td>
+<tr class="even">
+<td align="left">96</td>
 <td align="left"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093356/">Ryan, J.C., Cleland, C.M., &amp; Fu, M.R. (2012). Predictors of practice patterns for lymphedema care among oncology advanced practice nurses. Journal of the Advanced Practitioner in Oncology, 3, 307-318.</a></td>
 </tr>
-<tr class="even">
-<td>96</td>
+<tr class="odd">
+<td align="left">97</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-011-0079-8">Vazan, P., Mateu-Gelabert, P., Cleland, C.M., Sandoval, M., &amp; Friedman, S.R. (2012). Correlates of staying safe behaviors among long-term injection drug users: Psychometric evaluation of the Staying Safe questionnaire. AIDS and Behavior, 16, 1472-1481.</a></td>
 </tr>
-<tr class="odd">
-<td>97</td>
+<tr class="even">
+<td align="left">98</td>
 <td align="left"><a href="http://dx.doi.org/10.1037/a0026493">Staines, G.L. &amp; Cleland, C.M. (2012). Observational studies versus randomized controlled trials of behavioral interventions in field settings. Review of General Psychology, 16, 37-58.</a></td>
 </tr>
-<tr class="even">
-<td>98</td>
+<tr class="odd">
+<td align="left">99</td>
 <td align="left"><a href="https://www.ncbi.nlm.nih.gov/pubmed/22165584">Fu, M.R., Guth, A.A., Cleland, C.M., Lima, E.D.R.P., Kayal, M., Haber, J., Gallup, L., &amp; Axelrod, D. (2011). The effects of symptomatic seroma on lymphedema symptoms following breast cancer treatment. Lymphology, 44, 134-144.</a></td>
 </tr>
-<tr class="odd">
-<td>99</td>
+<tr class="even">
+<td align="left">100</td>
 <td align="left"><a href="https://doi.org/10.1007/s11524-012-9670-1">Pouget, E.R., Friedman, S.R., Cleland, C.M., Tempalski, B., &amp; Cooper, H.L.F. (2012). Estimates of the population prevalence of injection drug users among Hispanic residents of large U.S. metropolitan areas. Journal of Urban Health, 89, 527-564.</a></td>
 </tr>
-<tr class="even">
-<td>100</td>
+<tr class="odd">
+<td align="left">101</td>
 <td align="left"><a href="https://doi.org/10.2105/AJPH.2011.300373">Khan, M., Berger, A.T., Wells, B.E., &amp; Cleland, C.M. (2012). Longitudinal associations between adolescent alcohol use and adulthood sexual risk behavior and sexually transmitted infection in the United States: Assessment of differences by race. American Journal of Public Health, 102, 867-876.</a></td>
 </tr>
-<tr class="odd">
-<td>101</td>
+<tr class="even">
+<td align="left">102</td>
 <td align="left"><a href="https://doi.org/10.1016/j.jsat.2011.07.011">Sacks, S., Chaple, M., Sacks, J., McKendrick, K., &amp; Cleland, C.M. (2012). Randomized trial of a re-entry modified therapeutic community for offenders with co-occurring disorders: Crime outcomes. Journal of Substance Abuse Treatment, 42, 247-259.</a></td>
 </tr>
-<tr class="even">
-<td>102</td>
+<tr class="odd">
+<td align="left">103</td>
 <td align="left"><a href="https://doi.org/10.1080/09540121.2011.582075">Sacks, S., McKendrick, K., Vazan, P., Sacks, J.Y., &amp; Cleland, C.M. (2011). Modified TC aftercare for clients triply diagnosed with HIV/AIDS and co-occurring mental and substance use disorders. AIDS Care, 23, 1676-1686.</a></td>
 </tr>
-<tr class="odd">
-<td>103</td>
+<tr class="even">
+<td align="left">104</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-011-9992-0">Chatterjee, S., Tempalski, B., Pouget, E.R., Cooper, H.L.F., Cleland, C.M., &amp; Friedman, S.R. (2011). Estimating the Prevalence of Injection Drug Use Among Young Adults in Large U.S. Metropolitan Areas over Time (1992-2002): Estimation Methods and Worrisome Trend. AIDS and Behavior, 15, 1570-1578.</a></td>
 </tr>
-<tr class="even">
-<td>104</td>
+<tr class="odd">
+<td align="left">105</td>
 <td align="left"><a href="https://doi.org/10.1080/15332640.2011.600201">Melnick, G., Duncan, A., Thompson, A., Wexler, H.K., Chaple, M., &amp; Cleland, C.M. (2011). Racial disparities in substance abuse treatment and the ecological fallacy. Journal of Ethnicity in Substance Abuse, 10, 226-245.</a></td>
 </tr>
-<tr class="odd">
-<td>105</td>
+<tr class="even">
+<td align="left">106</td>
 <td align="left"><a href="https://doi.org/10.2105/AJPH.2010.196048">Gwadz, M.V., Leonard, N.L., Cleland, C.M., Riedel, M., Banfield, A., Mildvan, D. &amp; The ACT2 Project Collaborative Research Team (2011). The Effect of Peer-Driven Intervention on Rates of Screening for AIDS Clinical Trials Among African Americans and Hispanics. American Journal of Public Health, 101, 1096-1102.</a></td>
 </tr>
-<tr class="even">
-<td>106</td>
+<tr class="odd">
+<td align="left">107</td>
 <td align="left"><a href="https://doi.org/10.1155/2011/948789">Rosenblum, A., Cleland, C.M., Fong, C., Kayman, D.J., Tempalski, B., &amp; Parrino, M. (2011). Distance Traveled and Cross-State Commuting to Opioid Treatment Programs in the United States. Journal of Environmental and Public Health, vol. 2011, Article ID 948789, 10 pages, 2011.</a></td>
 </tr>
-<tr class="odd">
-<td>107</td>
+<tr class="even">
+<td align="left">108</td>
 <td align="left"><a href="https://doi.org/10.1186/1747-597X-6-11">Cleland, C.M., Rosenblum, A.B., Fong, C., &amp; Maxwell, C. (2011). Age differences in heroin and prescription opioid abuse among enrollees into opioid treatment programs. Substance Abuse Treatment, Prevention, and Policy, 6, 11.</a></td>
 </tr>
-<tr class="even">
-<td>108</td>
+<tr class="odd">
+<td align="left">109</td>
 <td align="left"><a href="https://doi.org/10.2105/AJPH.2010.191759">Friedman, S.R., Pouget, E.R., Chatterjee, S., Cleland, C.M., Brady, J., &amp; Cooper, H.L.F. (2011). Drug arrests and injection drug deterrence. American Journal of Public Health, 101, 344-349.</a></td>
 </tr>
-<tr class="odd">
-<td>109</td>
+<tr class="even">
+<td align="left">110</td>
 <td align="left"><a href="https://doi.org/10.3109/10826084.2011.523324">Deren, S., Hagan, H., Friedman, S.R., Des Jarlais, D.C., Perlman, D.C., Gwadz, M.V., Cleland, C.M., Osborne, A., &amp; Lunievicz, J. (2011). Current and emerging research needs in studying the NY HIV-drug use epidemic. Substance Use and Misuse, 46, 316-319.</a></td>
 </tr>
-<tr class="even">
-<td>110</td>
+<tr class="odd">
+<td align="left">111</td>
 <td align="left"><a href="https://doi.org/10.1521/aeap.2010.22.6.523">Goldstein, M.F., Eckhardt, E.A., Joyner-Creamer, P., Berry, R., Paradise, H., &amp; Cleland, C.M. (2010). What do deaf high school students know about HIV? AIDS Education and Prevention, 22, 523-537.</a></td>
 </tr>
-<tr class="odd">
-<td>111</td>
+<tr class="even">
+<td align="left">112</td>
 <td align="left"><a href="https://doi.org/10.1186/1747-597X-5-23">Tempalski, B., Cleland, C.M., Chatterjee, S., Pouget, E.R., &amp; Friedman, S.R. (2010). Persistence of low drug treatment coverage for injection drug users in large US metropolitan areas. Substance Abuse Treatment, Prevention, and Policy, 5:23.</a></td>
 </tr>
-<tr class="even">
-<td>112</td>
+<tr class="odd">
+<td align="left">113</td>
 <td align="left"><a href="https://doi.org/10.1007/s11904-010-0055-3">Gwadz, M.V., Colon, P., Ritchie, A.R., Leonard, N.R., Cleland, C.M., Riedel, M., Bowens, D., Banfield, A.D., Chang, P., Quiles, R., &amp; Mildvan, D. (2010). Increasing and supporting the participation of persons of color living with HIV/AIDS in AIDS clinical trials. Current HIV/AIDS Reports, 7, 194-200.</a></td>
 </tr>
-<tr class="odd">
-<td>113</td>
+<tr class="even">
+<td align="left">114</td>
 <td align="left"><a href="https://doi.org/10.1521/aeap.2010.22.4.312">Gwadz, M.V., Cleland, C.M., Quiles, R., Nish, D., Welch, J., Michaels, L., Gonzalez, J.L., Ritchie, A.S., &amp; Leonard, N.R. (2010). CDC HIV testing guidelines and the rapid and conventional testing practices of homeless youth. AIDS Education and Prevention, 22, 312-327.</a></td>
 </tr>
-<tr class="even">
-<td>114</td>
+<tr class="odd">
+<td align="left">115</td>
 <td align="left"><a href="https://doi.org/10.1080/08897077.2010.495662">Sacks, S., Banks, S., McKendrick, K., Sacks, J.Y., &amp; Cleland, C.M. (2010). Modified therapeutic community for co-occurring disorders: Single investigator meta analysis. Substance Abuse, 31, 146-161.</a></td>
 </tr>
-<tr class="odd">
-<td>115</td>
+<tr class="even">
+<td align="left">116</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-009-9539-9">Gwadz, M.V., Cylar, K., Leonard, N.R., Riedel, M., Herzog, N., Arredondo, G.N., Cleland, C.M., Aguirre, M., Marshak, A., Mildvan, D. &amp; The Project ACT Study Team (2010). An exploratory behavioral intervention trial to improve rates of screening for AIDS clinical trials among racial/ethnic minority and female persons living with HIV/AIDS. AIDS and Behavior, 14, 639-648.</a></td>
 </tr>
-<tr class="even">
-<td>116</td>
+<tr class="odd">
+<td align="left">117</td>
 <td align="left"><a href="https://doi.org/10.1080/10550880903436051">DeLeon, G., Melnick, G., &amp; Cleland, C.M. (2010). Matching to sufficient treatment: Some characteristics of under-treated (mismatched) clients. Journal of Addictive Diseases, 29, 59-67.</a></td>
 </tr>
-<tr class="odd">
-<td>117</td>
+<tr class="even">
+<td align="left">118</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugpo.2009.02.008">Coffin, L.S., Newberry, A., Hagan, H., Cleland, C.M., Des Jarlais, D.C., &amp; Perlman, D.C. (2010). Syphilis in drug users in low and middle income countries. International Journal of Drug Policy, 21, 20-27.</a></td>
 </tr>
-<tr class="even">
-<td>118</td>
+<tr class="odd">
+<td align="left">119</td>
 <td align="left"><a href="https://doi.org/10.1080/15374410903401112">Feiring, C., Cleland, C.M., &amp; Simon, V.A. (2010). Abuse-specific self-schema predict dissociative symptoms: A prospective study of sexually abused youth. Journal of Clinical Child and Adolescent Psychology, 39, 35-50.</a></td>
 </tr>
-<tr class="odd">
-<td>119</td>
+<tr class="even">
+<td align="left">120</td>
 <td align="left"><a href="https://doi.org/10.1016/j.jsat.2008.05.002">Melnick, G., Wexler, H.K., Chaple, M., &amp; Cleland, C.M. (2009). Constructive conflict and staff consensus in substance abuse treatment. Journal of Substance Abuse Treatment, 36, 174-182.</a></td>
 </tr>
-<tr class="even">
-<td>120</td>
+<tr class="odd">
+<td align="left">121</td>
 <td align="left"><a href="https://doi.org/10.1007/s11524-008-9328-1">Tempalski, B., Lieb, S., Cleland, C.M., Cooper, H., Brady, J.E., &amp; Friedman, S.R. (2009). HIV prevalence rates among injection drug users in 96 large US metropolitan areas, 1992-2002. Journal of Urban Health, 86, 132-154.</a></td>
 </tr>
-<tr class="odd">
-<td>121</td>
+<tr class="even">
+<td align="left">122</td>
 <td align="left"><a href="http://dx.doi.org/10.1037/a0013475">Feiring, C., Simon, V.A., &amp; Cleland, C.M. (2009). Childhood sexual abuse, stigmatization, internalizing symptoms, and the development of sexual difficulties and dating aggression. Journal of Consulting and Clinical Psychology, 77, 127-137.</a></td>
 </tr>
-<tr class="even">
-<td>122</td>
+<tr class="odd">
+<td align="left">123</td>
 <td align="left"><a href="https://doi.org/10.1002/bsl.850">Sacks, S., Cleland, C.M., Melnick, G., Flynn, P.M., Knight, K., Friedmann, P.D., Prendergast, M.L., &amp; Coen, C. (2009). Violence associated with co-occurring substance use and mental health problems: Evidence from CJDATS. Behavioral Sciences and the Law, 27, 51-69.</a></td>
 </tr>
-<tr class="odd">
-<td>123</td>
+<tr class="even">
+<td align="left">124</td>
 <td align="left"><a href="https://doi.org/10.1080/02791072.2008.10400652">Pearson, F.S., Cleland, C.M., Chaple, M., Hamilton, Z., Prendergast, M.L., &amp; Rich, J.D. (2008). Substance use, mental health problems, and behavior at risk for HIV: Evidence from CJDATS. Journal of Psychoactive Drugs, 40, 459-469.</a></td>
 </tr>
-<tr class="even">
-<td>124</td>
+<tr class="odd">
+<td align="left">125</td>
 <td align="left"><a href="https://doi.org/10.1080/10550880802122703">DeLeon, G., Melnick, G., &amp; Cleland, C.M. (2008). Client Matching: A severity-treatment intensity paradigm. Journal of Addictive Diseases, 27(3), 99-113.</a></td>
 </tr>
-<tr class="odd">
-<td>125</td>
+<tr class="even">
+<td align="left">126</td>
 <td align="left"><a href="https://doi.org/10.1002/bsl.828">Sacks, J.Y., McKendrick, K., Hamilton, Z., Cleland, C.M., Pearson, F.S., &amp; Banks, S. (2008). Treatment outcomes for female offenders: Relationship to number of Axis I diagnoses. Behavioral Sciences and the Law, 26, 413-434.</a></td>
 </tr>
-<tr class="even">
-<td>126</td>
+<tr class="odd">
+<td align="left">127</td>
 <td align="left"><a href="https://doi.org/10.1002/bsl.822">Duncan, A., Sacks, S., Melnick, G., Cleland, C.M., Pearson, F.S., &amp; Coen, C. (2008). Performance of the CJDATS Co-Occurring Disorders Screening Instrument (CODSI) among minority offenders. Behavioral Sciences and the Law, 26, 351-368.</a></td>
 </tr>
-<tr class="odd">
-<td>127</td>
+<tr class="even">
+<td align="left">128</td>
 <td align="left"><a href="https://doi.org/10.1016/j.adolescence.2007.07.001">Leonard, N.R., Gwadz, M.V., Cleland, C.M., Vekaria, P.C., &amp; Ferns, B. (2008). Maternal substance use and HIV status: Adolescent risk and resilience. Journal of Adolescence, 31, 389-405.</a></td>
 </tr>
-<tr class="even">
-<td>128</td>
+<tr class="odd">
+<td align="left">129</td>
 <td align="left"><a href="https://doi.org/10.1080/16066350701651214">Gwadz, M., Leonard, N., Cleland, C.M., Riedel, Arredondo, Wolfe, Hardcastle, &amp; Morris (2008). Behavioral interventions for urban HIV infected and uninfected mothers with problem drinking. Addiction Research and Theory, 16, 47-65.</a></td>
 </tr>
-<tr class="odd">
-<td>129</td>
+<tr class="even">
+<td align="left">130</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugalcdep.2007.08.014">Melnick, G., Wexler, H.K., &amp; Cleland, C.M. (2008). Effects of client consensus on beliefs about abstinence on substance abuse treatment outcomes. Drug and Alcohol Dependence, 93, 30-37.</a></td>
 </tr>
-<tr class="even">
-<td>130</td>
+<tr class="odd">
+<td align="left">131</td>
 <td align="left"><a href="http://dx.doi.org/10.1037/1089-2680.11.4.329">Staines, G.L., &amp; Cleland, C.M. (2007). Bias in meta-analytic estimates of the absolute efficacy of psychotherapy. Review of General Psychology, 11, 329-347.</a></td>
 </tr>
-<tr class="odd">
-<td>131</td>
+<tr class="even">
+<td align="left">132</td>
 <td align="left"><a href="https://doi.org/10.1186/1471-2458-7-271">Cleland, C.M., Des Jarlais, D.C., Perlis, T.E., Stimson, G., Poznyak, V., &amp; the WHO Phase II Drug Injection Collaborative Study Group. (2007). HIV risk behaviors among female IDUs in developing and transitional countries. BMC Public Health, 7: 271.</a></td>
 </tr>
-<tr class="even">
-<td>132</td>
+<tr class="odd">
+<td align="left">133</td>
 <td align="left"><a href="https://doi.org/10.1016/j.chiabu.2007.03.020">Feiring, C., &amp; Cleland, C.M. (2007). Childhood sexual abuse and attributions of blame over six years following discovery. Child Abuse and Neglect, 31, 1169-1186.</a></td>
 </tr>
-<tr class="odd">
-<td>133</td>
+<tr class="even">
+<td align="left">134</td>
 <td align="left"><a href="https://doi.org/10.1177/1077559507301840">Feiring, C., Miller-Johnson, S., &amp; Cleland, C.M. (2007). Potential pathways from stigmatization and internalizing symptoms to delinquency in sexually abused youth. Child Maltreatment, 12, 220-232.</a></td>
 </tr>
-<tr class="even">
-<td>134</td>
+<tr class="odd">
+<td align="left">135</td>
 <td align="left"><a href="https://doi.org/10.1016/j.drugalcdep.2007.02.012">Rosenblum, A.B, Parrino, M., Schnoll, S.H., Fong, C., Maxwell, C., Cleland, C.M., Magura, S., &amp; Haddox, J.D. (2007). Prescription opioid abuse among enrollees into methadone maintenance treatment. Drug and Alcohol Dependence, 90, 64-71.</a></td>
 </tr>
-<tr class="odd">
-<td>135</td>
+<tr class="even">
+<td align="left">136</td>
 <td align="left"><a href="https://doi.org/10.1080/00952990701313652">Leonard, N.R., Gwadz, M.V., Cleland, C.M., Rotko, L. &amp; Gostnell, K. (2007). Physical and mental health functioning of urban HIV-infected and uninfected mothers with problem drinking. The American Journal of Drug and Alcohol Abuse, 33, 419-427.</a></td>
 </tr>
-<tr class="even">
-<td>136</td>
+<tr class="odd">
+<td align="left">137</td>
 <td align="left"><a href="https://doi.org/10.1682/JRRD.2006.05.0052">Villano, C.L., Rosenblum, A., Magura, S., Fong, C., Cleland, C.M., &amp; Betzler, T.F. (2007). Prevalence and correlates of posttraumatic stress disorder and chronic severe pain in psychiatric outpatients. Journal of Rehabilitation Research and Development, 44, 167-178.</a></td>
 </tr>
-<tr class="odd">
-<td>137</td>
+<tr class="even">
+<td align="left">138</td>
 <td align="left"><a href="https://doi.org/10.1177/1090198106288560">Cleland, C.M., Deren, S., Fuller, C.M., Blaney, S., McMahon, J.M., Tortu, S., Des Jarlais, D.C., &amp; Vlahov, D. (2007). Syringe disposal among injection drug users in Harlem and the Bronx during the New York State Expanded Syringe Access Demonstration Program. Health Education &amp; Behavior, 34, 390-403.</a></td>
 </tr>
-<tr class="even">
-<td>138</td>
+<tr class="odd">
+<td align="left">139</td>
 <td align="left"><a href="https://doi.org/10.1007/s10488-006-0091-x">Magura, S., Cleland, C.M., Vogel, H.S., Knight, E.L., &amp; Laudet, A.B. (2007). Effects of “dual focus” mutual aid on self-efficacy for recovery and quality of life. Administration and Policy in Mental Health and Mental Health Services Research, 34, 1-12.</a></td>
 </tr>
-<tr class="odd">
-<td>139</td>
+<tr class="even">
+<td align="left">140</td>
 <td align="left"><a href="https://doi.org/10.1007/s10461-006-9096-4">Deren, S., Cleland, C.M., Fuller, C., Kang, S-Y., Des Jarlais, D.C., &amp; Vlahov, D. (2006). The impact of syringe deregulation on sources of syringes for injection drug users: Preliminary findings. AIDS and Behavior, 10, 717-721.</a></td>
 </tr>
-<tr class="even">
-<td>140</td>
+<tr class="odd">
+<td align="left">141</td>
 <td align="left"><a href="https://doi.org/10.1016/j.addbeh.2005.08.014">Cleland, C.M., Magura, S., Foote, J., Rosenblum, A., &amp; Kosanke, N. (2006). Factor structure of the Conners Adult ADHD Rating Scale (CAARS) for substance users. Addictive Behaviors, 31, 1276-1281.</a></td>
 </tr>
-<tr class="odd">
-<td>141</td>
+<tr class="even">
+<td align="left">142</td>
 <td align="left"><a href="https://doi.org/10.1177/0193841X05277084">Staines, G.L., Cleland, C.M., &amp; Blankertz, L. (2006). Counselor confounds in evaluations of vocational rehabilitation methods in substance dependency treatment. Evaluation Review, 30, 139-170.</a></td>
 </tr>
-<tr class="even">
-<td>142</td>
+<tr class="odd">
+<td align="left">143</td>
 <td align="left"><a href="https://doi.org/10.1016/j.jpsychores.2004.11.002">Cleland, C.M., Magura, S., Foote, J., Rosenblum, A., &amp; Kosanke, N. (2005). Psychometric properties of the Toronto Alexithymia Scale (TAS-20) for substance users. Journal of Psychosomatic Research, 58, 299-306.</a></td>
 </tr>
-<tr class="odd">
-<td>143</td>
+<tr class="even">
+<td align="left">144</td>
 <td align="left"><a href="https://doi.org/10.1521/aeap.17.3.157.62901">Cooperman, N.A., Falkin, G.P., &amp; Cleland, C.M. (2005). Changes in women’s sexual risk behavior after therapeutic community treatment. AIDS Education and Prevention, 17, 157-169.</a></td>
 </tr>
-<tr class="even">
-<td>144</td>
+<tr class="odd">
+<td align="left">145</td>
 <td align="left"><a href="https://doi.org/10.1080/02791072.2005.10399751">Magura, S., Fong, C., Staines, G.L., Cleland, C.M., Foote, J., Rosenblum, A., Kosanke, N., &amp; DeLuca, A. (2005). The combined effects of treatment intensity, mutual support groups and patient attributes on drinking outcomes. Journal of Psychoactive Drugs, 37, 85-92.</a></td>
 </tr>
-<tr class="odd">
-<td>145</td>
+<tr class="even">
+<td align="left">146</td>
 <td align="left"><a href="https://doi.org/10.1081/JA-200030816">Rosenblum, A., Magura, S., Fong, C., Cleland, C.M., Norwood, C., Casella, D., Truell, J., &amp; Curry, P. (2005). Substance use among young adolescents in HIV-affected families: Resiliency, peer deviance, and family functioning. Substance Use and Misuse, 40, 581-603.</a></td>
 </tr>
-<tr class="even">
-<td>146</td>
+<tr class="odd">
+<td align="left">147</td>
 <td align="left"><a href="https://doi.org/10.1081/ADA-37562">Rosenblum, A., Foote, J., Cleland, C.M., Magura, S., Mahmood, D., &amp; Kosanke, N. (2005). Moderators of effects of motivational enhancements to cognitive behavioral therapy. The American Journal of Drug and Alcohol Abuse, 1, 35-58.</a></td>
 </tr>
-<tr class="odd">
-<td>147</td>
+<tr class="even">
+<td align="left">148</td>
 <td align="left"><a href="https://doi.org/10.1016/j.evalprogplan.2004.04.013">Staines, G.L., Blankertz, L., Magura, S., Cleland, C.M., &amp; Bali, P. (2005). Evaluating vocational rehabilitation programs for substance users: Issues in designing and implementing randomized studies. Evaluation And Program Planning, 28, 61-68.</a></td>
 </tr>
-<tr class="even">
-<td>148</td>
+<tr class="odd">
+<td align="left">149</td>
 <td align="left"><a href="https://doi.org/10.1007/s10464-004-7413-5">Laudet, A.B., Magura, S., Cleland, C.M., Vogel, H.S., Knight, E.L. (2004). Social support mediates the effects of dual-focus mutual aid groups on abstinence from substance use. American Journal of Community Psychology, 34, 175-185.</a></td>
 </tr>
-<tr class="odd">
-<td>149</td>
+<tr class="even">
+<td align="left">150</td>
 <td align="left"><a href="https://doi.org/10.1300/J229v05n03_03">Villano, C., Cleland, C.M., Rosenblum, A., Fong, C., Nuttbrock, L., Marthol, M., &amp; Wallace, J. (2004). Psychometric utility of the Childhood Trauma Questionnaire with female street-based sex workers. Journal of Trauma and Dissociation, 5, 33-41.</a></td>
 </tr>
-<tr class="even">
-<td>150</td>
+<tr class="odd">
+<td align="left">151</td>
 <td align="left"><a href="https://doi.org/10.1080/02791072.2004.10399731">Laudet, A.B., Magura, S., Cleland, C.M., Vogel, H.S., Knight, E.L., &amp; Rosenblum, A. (2004). The effect of 12-step based fellowship participation on abstinence among dually-diagnosed persons: A two year longitudinal study. Journal of Psychoactive Drugs, 36, 207-216.</a></td>
 </tr>
-<tr class="odd">
-<td>151</td>
+<tr class="even">
+<td align="left">152</td>
 <td align="left"><a href="http://dx.doi.org/10.1037/0021-843X.112.4.657">Rothschild, L., Cleland, C.M., Haslam, N., &amp; Zimmerman, M. (2003). A taxometric study of borderline personality disorder. Journal of Abnormal Psychology, 112, 657-666.</a></td>
 </tr>
-<tr class="even">
-<td>152</td>
+<tr class="odd">
+<td align="left">153</td>
 <td align="left"><a href="https://doi.org/10.1001/jama.289.18.2370">Rosenblum, A., Joseph, H., Fong, C., Kipnis, S., Cleland, C.M., &amp; Portenoy, R.K. (2003). Prevalence and characteristics of chronic pain among chemically dependent patients in methadone maintenance and residential treatment facilities. Journal of the American Medical Association, 289, 2370-2380.</a></td>
 </tr>
-<tr class="odd">
-<td>153</td>
+<tr class="even">
+<td align="left">154</td>
 <td align="left"><a href="https://doi.org/10.1023/A:1024085423488">Laudet, A.B., Magura, S., Cleland, C.M., Vogel, H., &amp; Knight, E. (2003). Predictors of retention in dual-focus self-help groups. Community Mental Health Journal, 39, 281-297.</a></td>
 </tr>
-<tr class="even">
-<td>154</td>
+<tr class="odd">
+<td align="left">155</td>
 <td align="left"><a href="https://doi.org/10.1002/9780470713464.ch2">Lipton, D.S., Pearson, F.S., Cleland, C.M., &amp; Yee, D. (2002). The effects of therapeutic communities and milieu therapy on recidivism: Meta-analytic findings from the Correctional Drug Abuse Treatment Effectiveness (CDATE) Study. In J. McGuire (Ed.), Offender rehabilitation and treatment: Effective programmes and policies to reduce re-offending (pp. 39-78). John Wiley &amp; Sons, Ltd.</a></td>
 </tr>
-<tr class="odd">
-<td>155</td>
+<tr class="even">
+<td align="left">156</td>
 <td align="left"><a href="https://doi.org/10.1002/9780470713464.ch3">Lipton, D.S., Pearson, F.S., Cleland, C.M., &amp; Yee, D. (2002). The effectiveness of cognitive-behavioral treatment methods on offender recidivism: Meta-analytic outcomes from the CDATE Project. In J. McGuire (Ed.), Offender rehabilitation and treatment: Effective programmes and policies to reduce re-offending (pp. 79-112). John Wiley &amp; Sons, Ltd.</a></td>
 </tr>
-<tr class="even">
-<td>156</td>
+<tr class="odd">
+<td align="left">157</td>
 <td align="left"><a href="https://doi.org/10.1016/S0022-3956(02)00011-0">Ambrosini, P.J., Bennett, D.S., Cleland, C.M., &amp; Haslam, N. (2002). Taxonicity of adolescent melancholia. Journal of Psychiatric Research, 36, 247-256.</a></td>
 </tr>
-<tr class="odd">
-<td>157</td>
+<tr class="even">
+<td align="left">158</td>
 <td align="left"><a href="https://doi.org/10.2466/pr0.2002.90.2.401">Haslam, N., &amp; Cleland, C.M. (2002). Taxometric analysis of fuzzy categories: A Monte Carlo study. Psychological Reports, 90, 401-404.</a></td>
 </tr>
-<tr class="even">
-<td>158</td>
+<tr class="odd">
+<td align="left">159</td>
 <td align="left"><a href="https://doi.org/10.1177/001112870204800306">Pearson, F.S., Lipton, D.S., Cleland, C.M., Yee, D.S. (2002). The effects of behavioral / cognitive behavioral programs on recidivism. Crime and Delinquency, 48, 476-496.</a></td>
 </tr>
-<tr class="odd">
-<td>159</td>
+<tr class="even">
+<td align="left">160</td>
 <td align="left"><a href="https://doi.org/10.2466/pr0.2000.87.1.37">Cleland, C.M., Rothschild, L. &amp; Haslam, N. (2000). Detecting latent taxa: Monte Carlo comparison of taxometric, mixture model, and clustering procedures. Psychological Reports, 87, 37-47.</a></td>
 </tr>
-<tr class="even">
-<td>160</td>
+<tr class="odd">
+<td align="left">161</td>
 <td align="left"><a href="https://doi.org/10.3109/10826080009148247">Egg, R., Pearson, F.S., Cleland, C.M., &amp; Lipton, D.S. (2000). Evaluations of correctional treatment programs in Germany: A review and meta-analysis. Substance Use and Misuse, 35(12-14), 1967-2009.</a></td>
 </tr>
-<tr class="odd">
-<td>161</td>
+<tr class="even">
+<td align="left">162</td>
 <td align="left"><a href="https://doi.org/10.1080/09540120050001887">Bhattacharya, G., Cleland, C.M., &amp; Holland, S. (2000). Knowledge about HIV/AIDS, the perceived risks of infections, and sources of information by Asian-Indian adolescents born in the United States. AIDS Care, 12, 203-209.</a></td>
 </tr>
-<tr class="even">
-<td>162</td>
+<tr class="odd">
+<td align="left">163</td>
 <td align="left"><a href="https://doi.org/10.1023/A:1022013019118">Bhattacharya, G., Cleland, C.M., and Holland, S. (1999). Peer networks, parental attributes, and drug use among Asian-Indian adolescents born in the United States. Journal of Immigrant Health, 1, 145-154.</a></td>
 </tr>
-<tr class="odd">
-<td>163</td>
+<tr class="even">
+<td align="left">164</td>
 <td align="left"><a href="https://doi.org/10.2466/pr0.1996.79.1.243">Cleland, C.M. &amp; Haslam, N. (1996). Robustness of taxometric analysis with skewed indicators: I. A Monte Carlo study of the MAMBAC procedure. Psychological Reports, 79, 243-248.</a></td>
 </tr>
-<tr class="even">
-<td>164</td>
+<tr class="odd">
+<td align="left">165</td>
 <td align="left"><a href="https://doi.org/10.2466/pr0.1996.79.3.1035">Haslam, N. &amp; Cleland, C.M. (1996). Robustness of taxometric analysis with skewed indicators: II. A Monte Carlo Study of the MAXCOV procedure. Psychological Reports, 79, 1035-1039.</a></td>
 </tr>
-<tr class="odd">
-<td>165</td>
+<tr class="even">
+<td align="left">166</td>
 <td align="left"><a href="http://www.cogsci.ecs.soton.ac.uk/cgi/psyc/newpsy?6.41">Haslam,N. &amp; Cleland, C.M. (1995). CORE CONFIGURATIONS, REPEATED ASSEMBLIES, AND RELATIONAL MODELS Commentary on Caporael on Group-Selection. Psycoloquy, 6 (41).</a></td>
 </tr>
 </tbody>
@@ -1295,195 +1326,199 @@ summary {
 <div id="conference-papers-and-posters" class="section level1">
 <h1>Conference Papers and Posters</h1>
 <table>
+<colgroup>
+<col width="0%"></col>
+<col width="99%"></col>
+</colgroup>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="left"> </th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
+<td align="left">1</td>
 <td align="left">Kurth, A., Lizcano, J., Cleland, C., Musyoki, H., Cherutich, P. (July 2017). Testing and Linkage to Care for Injecting Drug Users (TLC-IDU) in Kenya: A Baseline Assessment in Western Region. IAS, Paris, France.</td>
 </tr>
 <tr class="even">
-<td>2</td>
+<td align="left">2</td>
 <td align="left">Inwani, I., Buttolph, J., Agot, K., Cleland, C.M., Kiarie, J., Kinuthia, J., Kurth, A. (July 2017). PrEP Cohort Results from MP3 Youth Combination HIV Prevention Pilot Study. IAS, Paris, France.</td>
 </tr>
 <tr class="odd">
-<td>3</td>
+<td align="left">3</td>
 <td align="left">Kurth, A., Lizcano, J., Cleland, C., Musyoki, H., Cherutich, P. (June 2017). TLC-IDU in Kenya: Linkage to Care data. IAPAC Conference, Miami, FL.</td>
 </tr>
 <tr class="even">
-<td>4</td>
+<td align="left">4</td>
 <td align="left">Kurth, A., Lizcano, J., Cleland, C., Musyoki, H., Cherutich, P. (June 2017). Testing and Linkage to Care for Injecting Drug Users (TLC-IDU) in Kenya: A Baseline Assessment in Western Region. IAPAC Conference, Miami, FL.</td>
 </tr>
 <tr class="odd">
-<td>5</td>
+<td align="left">5</td>
 <td align="left">Buttolph, J., Inwani, I., Agot, K., Cleland, C.M., Kiarie, J., Kinuthia, J., and Kurth, A. (January 2017). Preliminary PrEP cohort results from MP3 Youth combination HIV prevention pilot study. Annual Meeting, University of Nairobi Collaborative Centre for Research &amp;Training in HIV/AIDS/STIs, Nairobi, Kenya.</td>
 </tr>
 <tr class="even">
-<td>6</td>
+<td align="left">6</td>
 <td align="left">Kurth, A.E., Cleland, C.M., Chhun, N., Sidle, J.E., Were, E., Naanyu, V., Emonyi, W., Macharia, S.M., Sang, E., and Siika, A.M. (January 2017). Lessons learned from an oral fluid HIV self-testing study in a general adult population in Kenya. Annual Meeting, University of Nairobi Collaborative Centre for Research &amp;Training in HIV/AIDS/STIs, Nairobi, Kenya.</td>
 </tr>
 <tr class="odd">
-<td>7</td>
+<td align="left">7</td>
 <td align="left">Kurth, A., Lizcano, J., Cleland, C.M., Musyoki, H., and Cherutich, P. (January 2017). Testing and linkage to care for injecting drug users (TLC-IDU) in Kenya: A baseline assessment in Western Region. Annual Meeting, University of Nairobi Collaborative Centre for Research &amp;Training in HIV/AIDS/STIs, Nairobi, Kenya.</td>
 </tr>
 <tr class="even">
-<td>8</td>
+<td align="left">8</td>
 <td align="left">Kurth, A., Lizcano, J., Cleland, C.M., Akiyama, M., Musyoki, H., and Cherutich, P. (January 2017). Hepatitis C Virus (HCV) among PWIDs in Kenya: An update. Annual Meeting, University of Nairobi Collaborative Centre for Research &amp;Training in HIV/AIDS/STIs, Nairobi, Kenya.</td>
 </tr>
 <tr class="odd">
-<td>9</td>
+<td align="left">9</td>
 <td align="left">Mackesy-Amiti, M. E., Strand, L., Nance, R., Chandler, R., Cunningham, W., Riley, E., &amp; Cleland, C. (2016, August). An Example of Exposure Heterogeneity When Pooling Epidemiologic Studies for Meta-Analysis of Antiretroviral Medication Adherence. In PHARMACOEPIDEMIOLOGY AND DRUG SAFETY (Vol. 25, pp. 55-56). 111 RIVER ST, HOBOKEN 07030-5774, NJ USA: WILEY-BLACKWELL.</td>
 </tr>
 <tr class="even">
-<td>10</td>
+<td align="left">10</td>
 <td align="left">Leonard, N. R., Fletcher, R.R., Casarjian, B., Gwadz, M.V., Cleland, C.M., Rajan, S. &amp; Salaam, R. (2014). Integrating emotional and behavioral skill building with mobile biosensor technology for at-risk adolescent mothers. Paper presented at the 35th Society for Behavioral Medicine Annual Conference, Philadelphia, Pennsylvania.</td>
 </tr>
 <tr class="odd">
-<td>11</td>
+<td align="left">11</td>
 <td align="left">Alsallaq, R., Buttolph, J., Cleland, C.M., Hallet, T., Inwani, I., &amp; Kurth, A. (2013). Estimating the impact of combined prevention interventions targeting 15-24 year-old men and women in Nyanza, Kenya. Presented at the 141st Annual Meeting and Exposition of the American Public Health Association, Boston, MA.</td>
 </tr>
 <tr class="even">
-<td>12</td>
+<td align="left">12</td>
 <td align="left">Buttolph, J., Inwani, I., Agot, K., Omanga, E., Walawanga, D., Cleland, C.M., &amp; Kurth, A. (2013). Gender-specific awareness and acceptability of pre-exposure prophylaxis to prevent HIV infection among youth in Western Kenya: Implications for implementation. Presented at the 141st Annual Meeting and Exposition of the American Public Health Association, Boston, MA.</td>
 </tr>
 <tr class="odd">
-<td>13</td>
+<td align="left">13</td>
 <td align="left">Buttolph, J., Inwani, I., Agot, K., Omanga, E., Walawanga, D., Cleland, C.M., &amp; Kurth, A. (2013). Gender-specific awareness and acceptability of pre-exposure prophylaxis to prevent HIV infection among youth in Western Kenya: Implications for implementation. Presented at the 8th International Conference on HIV Treatment and Prevention Adherence.</td>
 </tr>
 <tr class="even">
-<td>14</td>
+<td align="left">14</td>
 <td align="left">Kurth, A., Inwani, I., Agot, K., Cleland, C.M., Alsallaq, R., &amp; Buttolph, J. (2013). Combination HIV prevention for youth in high-burden settings: MP3 Youth. Presented at the 8th International Conference on HIV Treatment and Prevention Adherence.</td>
 </tr>
 <tr class="odd">
-<td>15</td>
+<td align="left">15</td>
 <td align="left">Sivapalasingham, S., Ahmed, A., McClelland, R.S., Cleland, C.M., Fajans, M., Anderson, M.E., Masese, L., Mwamzaka, M., Shafi, J., Marshed, F., Laverty, M., Jaoko, W., &amp; Kurth, A. (2012). An effective behavioral intervention to reduce intravaginal practices among HIV-1 uninfected Kenyan women. Presented at the XIX International AIDS Conference, Washington, DC.</td>
 </tr>
 <tr class="even">
-<td>16</td>
+<td align="left">16</td>
 <td align="left">Simon, V., Cleland, C.M., &amp; Feiring, C. (2012). Longitudinal Associations between Youths’ Reactions to Childhood Sexual Abuse and Subsequent Strategies for Processing Abuse Experiences. Presented at the Biennial Meeting of the Society for Research on Adolescence, Vancouver, British Columbia, Canada.</td>
 </tr>
 <tr class="odd">
-<td>17</td>
+<td align="left">17</td>
 <td align="left">Magura, S. &amp; Cleland, C.M. (2011). Structural equation modeling with cross-lagged paths to evaluate Alcoholics Anonymous’ effect on drinking. Presented at the Annual Meeting of the American Evaluation Association, Anaheim, California.</td>
 </tr>
 <tr class="even">
-<td>18</td>
+<td align="left">18</td>
 <td align="left">Linick, J.L., Leonard, N., Cleland, C.M., Tottenham, N., Massey, Z., &amp; Gwadz, M.V. (2011). Callous-Unemotional Traits, Fear Recognition, and Emotion Regulation in Incarcerated Youth. Presented at the Biennial Meeting of the Society for Research in Child Development, Montreal, Quebec, Canada.</td>
 </tr>
 <tr class="odd">
-<td>19</td>
+<td align="left">19</td>
 <td align="left">Friedman, S.R., Pouget, E.R., Tempalski, B., Cleland, C.M., Chatterjee, S., &amp; Cooper, H.L.F. (2011). Social drivers of drug-related harms among IDUs: Research to assist harm reduction agencies to plan political and policy long-term agendas. Presented at the Annual Meeting of the International Harm Reduction Association, Beruit, Lebanon.</td>
 </tr>
 <tr class="even">
-<td>20</td>
+<td align="left">20</td>
 <td align="left">Tempalski, B., Cleland, C.M., Pouget, E.R., Chatterjee, S., &amp; Friedman, S.R. (2010). Persistence of low drug treatment coverage for injection drug users in large US metropolitan areas. Presented at the 8th National Harm Reduction Conference, Austin, Texas.</td>
 </tr>
 <tr class="odd">
-<td>21</td>
+<td align="left">21</td>
 <td align="left">Gwadz, M.V., Leonard, N., Banfield, A., Colon, P., Bowens, D., Riedel, M., Ritchie, A., Cleland, C.M., &amp; Mildvan, D. (2010). Peer-driven intervention to minimize racial/ethnic disparities in HIV/AIDS clinical trials. Presented at the Annual Meeting of the American Public Health Association, Denver, Colorado.</td>
 </tr>
 <tr class="even">
-<td>22</td>
+<td align="left">22</td>
 <td align="left">Rosenblum, A.B., Cleland, C.M., &amp; Fong, C. (2010). Prescription opioid abuse predicts first admission into methadone maintenance treatment. Presented at the Annual Meeting of the American Association for the Treatment of Opioid Dependence (AATOD), Chicago, Illinois.</td>
 </tr>
 <tr class="odd">
-<td>23</td>
+<td align="left">23</td>
 <td align="left">Friedman, S.R., Tempalski, B., Cooper, H.L.F., Cleland, C.M., Pouget, E.R., &amp; Chatterjee, S. (2010). Comparative urban research: A promising epidemiologic and policy research tool. Presented at the NIDA International Forum, Scottsdale, Arizona.</td>
 </tr>
 <tr class="even">
-<td>24</td>
+<td align="left">24</td>
 <td align="left">Rosenblum, A.B., Cruciani, R., Portenoy, R.K., Dvorkin, E.D., Sundaram, A., &amp; Cleland, C.M. (2010). Early results of a protocol to use buprenorphine for chronic pain in patients with aberrant drug-related behavior. Presented at the Annual Meeting of the College on Problems of Drug Dependence, Scottsdale, Arizona.</td>
 </tr>
 <tr class="odd">
-<td>25</td>
+<td align="left">25</td>
 <td align="left">Gwadz, M.V., Leonard, N.L., Cleland, C.M., Colon, P., Banfield, A., Middelton, S., Constantini, G., Ritchie, A., Riedel, M., Bowens, D., Quiles, R., Tharaken, M., Aguirre, M., Mildvan, D., &amp; The ACT2 Project Collaborative Research Team (2010). Peer-Driven Intervention Increases Rates of Screening for AIDS Clinical Trials among Persons Living with HIV/AIDS from Racial/Ethnic Minority Backgrounds. Presented at the XVIII International AIDS Conference, Vienna, Austria.</td>
 </tr>
 <tr class="even">
-<td>26</td>
+<td align="left">26</td>
 <td align="left">Cleland, C.M., Rosenblum, A., Fong, C., Parrino, M., &amp; Magura, S. (2010). Prescription opioid abuse predicts first admission into methadone maintenance treatment. Presented at the Annual Meeting of the College on Problems of Drug Dependence, Scottsdale, Arizona.</td>
 </tr>
 <tr class="odd">
-<td>27</td>
+<td align="left">27</td>
 <td align="left">Sacks, S., Cleland, C.M., McKendrick, K. (2009). Modified TC for persons with co-occurring disorders: A meta-analysis. Presented at the Annual Meeting of the College on Problems of Drug Dependence, Reno, Nevada.</td>
 </tr>
 <tr class="even">
-<td>28</td>
+<td align="left">28</td>
 <td align="left">Cleland, C.M., Rosenblum, A., Fong, C., Parrino, M., &amp; Magura, S. (2009). Age effects on heroin and prescription opioid abuse among enrollees into methadone maintenance treatment. Presented at the Annual Meeting of the College on Problems of Drug Dependence, Reno, Nevada.</td>
 </tr>
 <tr class="odd">
-<td>29</td>
+<td align="left">29</td>
 <td align="left">Tempalski, B., Lieb, S., Cleland, C.M., Cooper, H., &amp; Friedman, S. (2009). Geographic patterns of change in IDU-related HIV prevalence rates across 96 metropolitan statistical areas, 1992-2002. Presented at the Annual Meeting of the Association of American Geographers, Las Vegas, Nevada.</td>
 </tr>
 <tr class="even">
-<td>30</td>
+<td align="left">30</td>
 <td align="left">Neaigus, A., Friedman, S., Gyarmathy, V.A., Cleland, C.M., &amp; Des Jarlais, D.C. (2008). Heroin injectors who also use non-injection heroin have lower injecting frequency and lower HCV infection rates. Presented at the 19th Annual International Harm Reduction Association Conference, Barcelona, Spain.</td>
 </tr>
 <tr class="odd">
-<td>31</td>
+<td align="left">31</td>
 <td align="left">Fiering, C. &amp; Cleland, C.M. (2008). Stigmatization as a pathway to disrupted self-development in sexually abused youth. Paper Presented at the Biennial Meeting of the Society for Research on Adolescence, Chicago, IL.</td>
 </tr>
 <tr class="even">
-<td>32</td>
+<td align="left">32</td>
 <td align="left">Cleland, C.M., Des Jarlais, D.C., Perlis, T.E., Stimson, G., Poznyak, V., and the WHO Phase II Drug Injection Collaborative Study Group (2007). HIV risk behaviors among female IDUs in developing and transitional countries. Poster Presented at the Annual Meeting of the College on Problems of Drug Dependence, Québec City, Canada.</td>
 </tr>
 <tr class="odd">
-<td>33</td>
+<td align="left">33</td>
 <td align="left">Fiering, C., Miller-Johnson, S., &amp; Cleland, C.M. (2007). Stigmatization as a pathway to delinquency in sexually abused youth. Paper Presented at the Biennial Meeting of the Society for Research in Child Development, Boston, MA.</td>
 </tr>
 <tr class="even">
-<td>34</td>
+<td align="left">34</td>
 <td align="left">Gwadz, M., &amp; Cleland, C.M. (2006). Project ACT: A pilot intervention to increase screening for AIDS clinical trials among racial/ethnic minorities and women in New York City. Poster presented at the International AIDS Conference, Toronto, Canada.</td>
 </tr>
 <tr class="odd">
-<td>35</td>
+<td align="left">35</td>
 <td align="left">Cleland, C.M., Deren, S., Fuller, C.M., Blaney, S., McMahon, J.M., Tortu, S., Des Jarlais, D.C., &amp; Vlahov, D. (2005). Syringe disposal among injection drug users in Harlem and the Bronx during the New York State Expanded Syringe Access Demonstration Program. Paper presented at the Annual Meeting of the American Public Health Association, Philadelphia, PA.</td>
 </tr>
 <tr class="even">
-<td>36</td>
+<td align="left">36</td>
 <td align="left">Cleland, C.M., Gwadz, M., Leonard, N., Rotko, L., &amp; Gostnell, K. (2004). Multilevel modeling of family data in HIV research. Paper presented at the Annual NIMH International Research Conference on the Role of Families in Preventing and Adapting to HIV/AIDS, Atlanta, GA.</td>
 </tr>
 <tr class="odd">
-<td>37</td>
+<td align="left">37</td>
 <td align="left">Cleland, C.M., Fong, C., Foote, J., Magura, S., &amp; Rosenblum, A. (2003). Multiple imputation and listwise deletion approaches to missing data in a clinical trial. Poster Presented at the Annual Meeting of the College on Problems of Drug Dependence, Bal Harbour, FL.</td>
 </tr>
 <tr class="even">
-<td>38</td>
+<td align="left">38</td>
 <td align="left">Cleland, C.M. &amp; Lewis, M. (2001). Differences in resistance to temptation and deception between Japanese and American preschoolers. Poster Presented at the Biennial Meeting of the Society for Research in Child Development, Minneapolis, MN.</td>
 </tr>
 <tr class="odd">
-<td>39</td>
+<td align="left">39</td>
 <td align="left">Cleland, C.M., &amp; Lewis, M. (1999). More evidence of deception in young children. Poster Presented at the Biennial Meeting of the Society for Research in Child Development, Albuquerque, NM.</td>
 </tr>
 <tr class="even">
-<td>40</td>
+<td align="left">40</td>
 <td align="left">Lipton, D. S., Pearson, F. S., Cleland, C.M., &amp; Yee, D. (1998). Synthesizing correctional treatment outcomes: Preliminary findings from CDATE. Paper presented at the Office of Justice Programs/Corrections Program Office National Workshop on Assessing the Effectiveness of Corrections Programs, Chicago, IL.</td>
 </tr>
 <tr class="odd">
-<td>41</td>
+<td align="left">41</td>
 <td align="left">Pearson, F. S., Lipton, D. S., Cleland, C.M., &amp; Yee, D. (1998). A review and meta-analysis of the effects of experiential challenge programs on recidivism. Paper Presented at the Annual Meeting of the American Society of Criminology.</td>
 </tr>
 <tr class="even">
-<td>42</td>
+<td align="left">42</td>
 <td align="left">Cleland, C.M., Yee, D., Pearson, F. S., &amp; Lipton, D. S. (1997). Does age make a difference? A meta-analytic approach to reductions in criminal offending for juveniles and adults. Paper Presented at the Annual Meeting of the American Society of Criminology, San Diego, CA.</td>
 </tr>
 <tr class="odd">
-<td>43</td>
+<td align="left">43</td>
 <td align="left">Pearson, F. S., Lipton, D. S., &amp; Cleland, C.M. (1997). Rehabilitative programs in adult corrections: CDATE meta-analyses. Paper Presented at the Annual Meeting of the American Society of Criminology, San Diego, CA.</td>
 </tr>
 <tr class="even">
-<td>44</td>
+<td align="left">44</td>
 <td align="left">Cleland, C.M., Pearson, F. S., &amp; Lipton, D. S. (1996). A meta-analytic approach to the link between needs-targeted treatment and reductions in criminal offending. Paper Presented at the Annual Meeting of the American Society of Criminology, Chicago, IL.</td>
 </tr>
 <tr class="odd">
-<td>45</td>
+<td align="left">45</td>
 <td align="left">Pearson, F. S., Lipton, D. S., &amp; Cleland, C.M. (1996). Some preliminary findings from the CDATE Project. Paper Presented at the Annual Meeting of the American Society of Criminology, Chicago, IL.</td>
 </tr>
 <tr class="even">
-<td>46</td>
+<td align="left">46</td>
 <td align="left">Pearson, F. S., Lipton, D. S., Cleland, C.M., &amp; O’Kane, J. B. (1995). Meta-analysis on the effectiveness of correctional treatment: Another approach and extension of the time frame to 1994 - A progress report. Paper Presented at the Annual Meeting of the American Society of Criminology, Boston, MA.</td>
 </tr>
 </tbody>
@@ -1492,99 +1527,103 @@ summary {
 <div id="statistical-workshops-presentations-and-guest-lectures" class="section level1">
 <h1>Statistical Workshops, Presentations, and Guest Lectures</h1>
 <table>
+<colgroup>
+<col width="1%"></col>
+<col width="98%"></col>
+</colgroup>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="left"> </th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
+<td align="left">1</td>
 <td align="left">What is happening with my research project right now? Tools for building and sharing dynamic reports from web-based data collection. NYU Langone, Department of Population Health. September 26, 2018.</td>
 </tr>
 <tr class="even">
-<td>2</td>
+<td align="left">2</td>
 <td align="left">Developing a quantitative analysis plan for early phase research. Center for Drug Use and HIV Research. April 18, 2018.</td>
 </tr>
 <tr class="odd">
-<td>3</td>
+<td align="left">3</td>
 <td align="left">Factor Analysis. Guest Lecture for Maria Khan, Department of Population Health, NYU School of Medicine. April 12, 2018.</td>
 </tr>
 <tr class="even">
-<td>4</td>
+<td align="left">4</td>
 <td align="left">What is happening with my research project right now? Tools for building and sharing dynamic reports from web-based data collection. NYU Meyers College of Nursing. March 27, 2018.</td>
 </tr>
 <tr class="odd">
-<td>5</td>
+<td align="left">5</td>
 <td align="left">Underused research designs: MOST and SMART. Guest Lecture for Danielle Ompad, NYU College of Global Public Health. December 6, 2017.</td>
 </tr>
 <tr class="even">
-<td>6</td>
+<td align="left">6</td>
 <td align="left">An introduction to REDCap for data collection and research project management. NYU Meyers College of Nursing. November 30, 2017.</td>
 </tr>
 <tr class="odd">
-<td>7</td>
+<td align="left">7</td>
 <td align="left">R Hands-On Practice. NYU Meyers College of Nursing. October 26, 2017.</td>
 </tr>
 <tr class="even">
-<td>8</td>
+<td align="left">8</td>
 <td align="left">Introduction to R: Get Started and See the Possibilities. NYU Meyers College of Nursing. October 27, 2016.</td>
 </tr>
 <tr class="odd">
-<td>9</td>
+<td align="left">9</td>
 <td align="left">Introduction to R: Get Started and See the Possibilities. NYU Meyers College of Nursing. April 26, 2016.</td>
 </tr>
 <tr class="even">
-<td>10</td>
+<td align="left">10</td>
 <td align="left">Multilevel Modeling of Cross-Sectional Data: Introduction with Examples. NYU College of Nursing. April 18, 2013.</td>
 </tr>
 <tr class="odd">
-<td>11</td>
+<td align="left">11</td>
 <td align="left">Multilevel Modeling of Cross-Sectional Data: Introduction with Examples. NYU College of Nursing. May 19, 2011.</td>
 </tr>
 <tr class="even">
-<td>12</td>
+<td align="left">12</td>
 <td align="left">Power Analysis for Proposals: Concepts and Methods. NDRI Statistical Support Group. January 20, 2009.</td>
 </tr>
 <tr class="odd">
-<td>13</td>
+<td align="left">13</td>
 <td align="left">Power Analysis for Proposals: Concepts and Methods. NDRI Statistical Support Group. October 28, 2008.</td>
 </tr>
 <tr class="even">
-<td>14</td>
+<td align="left">14</td>
 <td align="left">Multilevel Modeling of Cross-Sectional Data: Introduction with Examples. NDRI Statistical Support Group. June 10, 2008.</td>
 </tr>
 <tr class="odd">
-<td>15</td>
+<td align="left">15</td>
 <td align="left">Respondent-Driven Sampling II: Illustrations, Limitations, and Discussion. NDRI Statistical Support Group. February 14, 2008.</td>
 </tr>
 <tr class="even">
-<td>16</td>
+<td align="left">16</td>
 <td align="left">Statistical Analysis of Respondent-Driven Samples. NDRI Statistical Support Group. June 26, 2007.</td>
 </tr>
 <tr class="odd">
-<td>17</td>
+<td align="left">17</td>
 <td align="left">An Introduction to Factor Analysis. NDRI Behavioral Science Training Pre- and Post-Doctoral Group. March 7, 2005.</td>
 </tr>
 <tr class="even">
-<td>18</td>
+<td align="left">18</td>
 <td align="left">An Introduction to Structural Equation Modeling. NDRI Statistical Support Group. April 15, 2004.</td>
 </tr>
 <tr class="odd">
-<td>19</td>
+<td align="left">19</td>
 <td align="left">Using Graphics Effectively in Data Analysis. NDRI Statistical Support Group. February 11, 2003.</td>
 </tr>
 <tr class="even">
-<td>20</td>
+<td align="left">20</td>
 <td align="left">SPSS Training. NDRI Statistical Support Group. February 4, 2003.</td>
 </tr>
 <tr class="odd">
-<td>21</td>
+<td align="left">21</td>
 <td align="left">Model Selection. NDRI Statistical Support Group. September 10, 2002.</td>
 </tr>
 <tr class="even">
-<td>22</td>
+<td align="left">22</td>
 <td align="left">Generalized Estimating Equations (GEE) in R. NDRI Statistical Support Group. May 7, 2002.</td>
 </tr>
 </tbody>
@@ -1593,6 +1632,16 @@ summary {
 <div id="continuing-research-support" class="section level1">
 <h1>Continuing Research Support</h1>
 <table>
+<colgroup>
+<col width="8%"></col>
+<col width="1%"></col>
+<col width="1%"></col>
+<col width="0%"></col>
+<col width="0%"></col>
+<col width="0%"></col>
+<col width="84%"></col>
+<col width="2%"></col>
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Title</th>
@@ -1712,6 +1761,16 @@ summary {
 <div id="completed-research-support" class="section level1">
 <h1>Completed Research Support</h1>
 <table>
+<colgroup>
+<col width="7%"></col>
+<col width="1%"></col>
+<col width="1%"></col>
+<col width="0%"></col>
+<col width="0%"></col>
+<col width="1%"></col>
+<col width="86%"></col>
+<col width="1%"></col>
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Title</th>
